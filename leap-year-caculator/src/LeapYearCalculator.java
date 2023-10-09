@@ -3,9 +3,8 @@ import java.util.Scanner;
 public class LeapYearCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int year;
         System.out.println("Enter a year: ");
-        year = scanner.nextInt();
+        int year = scanner.nextInt();
         boolean isLeapYear = false;
         boolean isDivisibleBy4 = year % 4 == 0;
         if (isDivisibleBy4) {
