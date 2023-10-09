@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="579eb43c-d488-47fa-8b9f-26ea176a97ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator-Expression/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator-Expression/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator-Expression/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator-Expression/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator-Expression/Operator-Expression.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator-Expression/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator-Expression/src/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Variable-DataType/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Variable-DataType/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Variable-DataType/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Variable-DataType/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Variable-DataType/Variable-DataType.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Variable-DataType/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Variable-DataType/src/VariableDataType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/bmi-caculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/src/BodyMassIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmi-caculator/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-of-month/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-of-month/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-of-month/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-of-month/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-of-month/day-of-month.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-of-month/src/DayOfMonth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-of-month/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/hien-thi-loi-chao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/src/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hien-thi-loi-chao/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/leap-year-caculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/src/LeapYearCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leap-year-caculator/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear-equation-resolver/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear-equation-resolver/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear-equation-resolver/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear-equation-resolver/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear-equation-resolver/linear-equation-resolver.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear-equation-resolver/src/LinearEquationResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear-equation-resolver/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../system-time/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../system-time/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../system-time/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../system-time/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../system-time/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../system-time/src/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../system-time/system-time.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="package-info" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2WW2gap922w4beIys8ssRm3SasX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Codegym/module-02-Advanced-programming- with-Java-2.1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="579eb43c-d488-47fa-8b9f-26ea176a97ca" name="Changes" comment="" />
+      <created>1696834128395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696834128395</updated>
+      <workItem from="1696834129391" duration="1035000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
