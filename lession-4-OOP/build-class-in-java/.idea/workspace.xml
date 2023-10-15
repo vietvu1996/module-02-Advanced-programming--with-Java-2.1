@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="200c86a4-3ad0-4c33-b80d-5521dcec8886" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/module-02-Advanced-programming- with-Java-2.1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Currency-conversion-application/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Currency-conversion-application/src/changeCurrency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../display-prime-numbers-less-than-100/src/primeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../display-prime-numbers-less-than-100/src/primeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/find-max-element.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/src/NumberArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/add-array-together/src/addArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/add-array-together/src/addArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/add-element-in-array/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/add-element-in-array/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/create-rectangle-class.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/src/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/delete-element-from-array/src/elementDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/delete-element-from-array/src/elementDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/find-min-element/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/find-min-element/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/src/minimumElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/src/minimumElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Access-modifier/Access-modifier.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Access-modifier/src/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build-class-in-java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-method-test/static-method-test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-property-test/src/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static-property-test/static-property-test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../name-to-number/src/NumberReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../name-to-number/src/NumberReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/reverse-array.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/src/ReverseArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/src/StudentArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/student-array.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2WlC0EsbEMjlBU3TrqlamAY2SMS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="200c86a4-3ad0-4c33-b80d-5521dcec8886" name="Changes" comment="" />
+      <created>1697297554749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697297554749</updated>
+      <workItem from="1697297555739" duration="2414000" />
+      <workItem from="1697379245435" duration="264000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
