@@ -12,6 +12,7 @@ public class Test {
         System.out.println("Area and Perimeter after increased percents");
         System.out.println(circle.getArea());
         System.out.println(circle.getPerimeter());
+        circle.howToColor();
 
         Rectangle rectangle = new Rectangle();
         System.out.println(rectangle);
@@ -24,6 +25,7 @@ public class Test {
         System.out.println("Area and Perimeter of rectangle after increased percents");
         System.out.println(rectangle.getArea());
         System.out.println(rectangle.getPerimeter());
+        rectangle.howToColor();
 
         Square square = new Square();
         System.out.println(square);
@@ -34,5 +36,6 @@ public class Test {
         square.resize(percent);
         System.out.println("Area and Perimeter of rectangle after increased percents");
         System.out.println(square.getArea());
+        square.howToColor();
     }
 }

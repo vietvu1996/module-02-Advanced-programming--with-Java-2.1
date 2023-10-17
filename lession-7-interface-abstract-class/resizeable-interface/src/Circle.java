@@ -1,4 +1,4 @@
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape implements Resizeable, Colorable {
     private double radius = 1.0;
 
     public Circle(){
@@ -35,5 +35,10 @@ public class Circle extends Shape implements Resizeable {
     }
     public void resize(double percent){
         radius *= percent/200;
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
     }
 }

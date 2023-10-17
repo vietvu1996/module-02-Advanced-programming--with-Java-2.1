@@ -1,4 +1,4 @@
-public class Square extends Rectangle implements Resizeable {
+public class Square extends Rectangle implements Resizeable, Colorable {
     private double side = 1;
 
     public Square(){
@@ -40,5 +40,10 @@ public class Square extends Rectangle implements Resizeable {
     @Override
     public void resize(double percent) {
         side *= percent/200;
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four side");
     }
 }
