@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db003550-185b-4336-b0ba-cf016967aab2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/module-02-Advanced-programming- with-Java-2.1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Currency-conversion-application/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Currency-conversion-application/src/changeCurrency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../display-prime-numbers-less-than-100/src/primeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../display-prime-numbers-less-than-100/src/primeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/find-max-element.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../find-max-element/src/NumberArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/method-of-ArrayList/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-10-array-linked-list/method-of-ArrayList/src/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/method-of-ArrayList/src/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-10-array-linked-list/method-of-ArrayList/src/MyListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/practise-for-future/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/practise-for-future/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/practise-for-future/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/practise-for-future/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/practise-for-future/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/practise-for-future/practise-for-future.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/practise-for-future/src/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-10-array-linked-list/simple-list/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-10-array-linked-list/simple-list/src/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/Use-stack-to-reverse-the-elements/src/MyGenericStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/Use-stack-to-reverse-the-elements/src/MyGenericStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/Use-stack-to-reverse-the-elements/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/Use-stack-to-reverse-the-elements/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/check-bracket/src/checkBracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/check-bracket/src/checkBracket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/check-palindrome/src/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/check-palindrome/src/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/check-palindrome/src/PalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/check-palindrome/src/PalindromeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/deploy-Queue-to-use-LinkedList/src/MyLinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/deploy-Queue-to-use-LinkedList/src/MyLinkedListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/deploy-stack-to-use-class-LinkedList/src/MyGenericStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/deploy-stack-to-use-class-LinkedList/src/MyGenericStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/dsa-stack-queue/src/employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/implement-queue/src/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-11-stack-and-queue/implement-queue/src/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/practise-for-future/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/practise-for-future/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/practise-for-future/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/practise-for-future/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/practise-for-future/practise-for-future.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/practise-for-future/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-11-stack-and-queue/practise-for-future/src/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-12-java-collection-framework/Use-ArrayList-LinkedList-in-JCF/src/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-12-java-collection-framework/Use-ArrayList-LinkedList-in-JCF/src/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-12-java-collection-framework/install-binary-search-tree/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-12-java-collection-framework/install-binary-search-tree/src/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-12-java-collection-framework/install-binary-search-tree/src/TestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-12-java-collection-framework/install-binary-search-tree/src/TestBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-13-search-algorithm/find-maximum-consecutive-increasing/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-13-search-algorithm/find-maximum-consecutive-increasing/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/add-array-together/src/addArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/add-array-together/src/addArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/add-element-in-array/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/add-element-in-array/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/create-rectangle-class.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/create-rectangle-class/src/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/delete-element-from-array/src/elementDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/delete-element-from-array/src/elementDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/find-min-element/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/find-min-element/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/src/minimumElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-3-array/find-minimum-element/src/minimumElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/Access-modifier/Access-modifier.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/Access-modifier/src/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/build-class-in-java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/build-class-in-java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/build-class-in-java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/build-class-in-java/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/build-class-in-java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/build-class-in-java/build-class-in-java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/build-class-in-java/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-method-test/static-method-test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-property-test/src/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-4-OOP/static-property-test/static-property-test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/CircleComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/CircleComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/CircleComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/CircleComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/ComparableCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/ComparableCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/ComparableCircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/ComparableCircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-6-inheritance/geometric-objects/src/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-6-inheritance/point-and-moveablePoint/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-6-inheritance/point-and-moveablePoint/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Eagle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Flyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Flyable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Sparrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/Sparrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/flyAbleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/flyAbleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/sparrow1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/Animal/src/sparrow1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/refactoring-divide-variable.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/src/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/src/FizzBuzzTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-7-interface-abstract-class/refactoring-divide-variable/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/lession-8-clean-code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/out/production/lession-8-clean-code/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/out/production/lession-8-clean-code/CalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-8-clean-code/out/production/lession-8-clean-code/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lession-9-automated-testing-and-TDD/caculate-the-next-day/src/NextDayCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lession-9-automated-testing-and-TDD/caculate-the-next-day/src/NextDayCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../name-to-number/src/NumberReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../name-to-number/src/NumberReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/reverse-array.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reverse-array/src/ReverseArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/src/StudentArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-array/student-array.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2XROcCcikdiiIbbx0NPVeIf1KNX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db003550-185b-4336-b0ba-cf016967aab2" name="Changes" comment="" />
+      <created>1698588502891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698588502891</updated>
+      <workItem from="1698588503876" duration="2837000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
