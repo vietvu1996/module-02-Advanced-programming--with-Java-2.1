@@ -1,0 +1,11 @@
+{
+  "userType": "ASSISTANTCOACH",
+  "fullName": "Tito Vilanova",
+  "Age": 45,
+  "nationality": "Spain",
+  "dateOfBirth": "17/09/1968",
+  "yearsContract": 5,
+  "salary": 250000.0,
+  "username": "Tito",
+  "password": "111"
+}

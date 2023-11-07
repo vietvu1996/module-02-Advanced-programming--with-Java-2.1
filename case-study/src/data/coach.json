@@ -1,0 +1,17 @@
+[
+  {
+    "userType": "COACH",
+    "fullName": "Pep Guardiola",
+    "Age": 52,
+    "nationality": "Spain",
+    "dateOfBirth": "18/01/1971",
+    "achievement": "Sextuple with Barcelona",
+    "experience": 4,
+    "footballStyle": "Control and Pass the ball",
+    "tactical": 433,
+    "yearsContract": 5,
+    "salary": 500000.0,
+    "username": "Pep",
+    "password": "123"
+  }
+]
