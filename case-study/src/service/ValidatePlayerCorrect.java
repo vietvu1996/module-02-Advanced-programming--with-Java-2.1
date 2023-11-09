@@ -2,13 +2,14 @@ package service;
 
 import entity.Player;
 import entity.User;
+import service.User.SingletonPlayerListManagement;
 
 import java.util.List;
 
 public class ValidatePlayerCorrect implements Validator{
-    private List<Player> players;
-    private String username;
-    private String password;
+    private final List<Player> players;
+    private final String username;
+    private final String password;
 
     public ValidatePlayerCorrect(String username, String password) {
         this.players = SingletonPlayerListManagement.getInstance().getPlayer();

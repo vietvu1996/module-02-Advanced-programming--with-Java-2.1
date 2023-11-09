@@ -14,6 +14,7 @@ public class Player extends User {
     private int yearsContract;
     private double salary;
 
+
     public Player(UserType userType, String username, String password, String fullName, String position, String dateOfBirth, String gender, String nationality, double height, double weight, boolean isLamasia, int tshirtNumber, int yearsContract, double salary) {
         super(username, password);
         this.userType = userType;

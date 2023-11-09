@@ -1,8 +1,6 @@
 package service;
 
 import menu.Command;
-import menu.NavigationMenuProfile;
-import menu.Navigator;
 import service.chainLogin.LoginAuthenticator;
 import service.chainLogin.LoginLogger;
 import service.chainLogin.LoginRedirect;
@@ -15,8 +13,6 @@ public class LoginCommand implements Command {
     @Override
     public void execute() {
         System.out.println("Login");
-//        Navigator navigator = new NavigationMenuProfile();
-//        navigator.navigate();
         System.out.println("Input username");
         String username = SCANNER.next();
         System.out.println("Input password");

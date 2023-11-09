@@ -7,4 +7,6 @@ public interface Constants {
     String CHAIRMAN_FILE_PATH = "data/chairman.json";
     String SPORTDIRECTOR_FILE_PATH = "data/sportdirector.json";
     String TECHNICALDIRECTOR_FILE_PATH = "data/technicaldirector.json";
+    String CHAMPIONSHIP_FILE_PATH = "data/championship.json";
+    String STADIUM_FILE_PATH = "data/stadium.json";
 }

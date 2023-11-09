@@ -1,0 +1,27 @@
+[
+  {
+    "nameOfLeague": "La Liga",
+    "timesOfChampionship": 27,
+    "area": "domestic"
+  },
+  {
+    "nameOfLeague": "Copa del Rey",
+    "timesOfChampionship": 31,
+    "area": "domestic"
+  },
+  {
+    "nameOfLeague": "UEFA Champions League",
+    "timesOfChampionship": 5,
+    "area": "Europe"
+  },
+  {
+    "nameOfLeague": "UEFA Super Cup",
+    "timesOfChampionship": 5,
+    "area": "Europe"
+  },
+  {
+    "nameOfLeague": "FIFA Club World Cup",
+    "timesOfChampionship": 3,
+    "area": "World"
+  }
+]

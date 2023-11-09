@@ -1,8 +1,9 @@
-package service;
+package service.User;
 
 import com.google.gson.reflect.TypeToken;
 import constant.Constants;
 import entity.Chairman;
+
 import java.lang.reflect.Type;
 
 public class SingletonChairmanManagement {

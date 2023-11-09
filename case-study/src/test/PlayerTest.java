@@ -4,15 +4,15 @@ import constant.Constants;
 import entity.User;
 import entity.PlayerFactory;
 import entity.UserType;
-import service.JsonFileHandler;
-import service.MyFileHandler;
+import service.User.JsonMyFileHandler;
+import service.User.MyFileHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PlayerTest {
     public static void main(String[] args) {
-        MyFileHandler fileHandler = new JsonFileHandler();
+        MyFileHandler fileHandler = new JsonMyFileHandler();
         List<User> players = new ArrayList<>();
 //        String username, String password, String fullName, String position, String dateOfBirth, String gender, String nationality, int height, int weight, boolean isLamasia, int tshirtNumber, int yearsContract, double salary
         PlayerFactory factory = new PlayerFactory();

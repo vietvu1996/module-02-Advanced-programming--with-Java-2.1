@@ -1,9 +1,9 @@
-package service;
+package service.User;
 
 import entity.AssistantCoach;
 
 public class SingletonCurrentAssistantCoach {
-    private AssistantCoach assistant;
+    private final AssistantCoach assistant;
     private static SingletonCurrentAssistantCoach instance;
 
     public SingletonCurrentAssistantCoach(){
@@ -25,9 +25,7 @@ public class SingletonCurrentAssistantCoach {
         return assistant.getFullName();
     }
 
-    public void setAssistant(AssistantCoach assistant,String username, String password) {
-        if(assistant.getUsername().equals(username) && assistant.getPassword().equals(password)){
-            this.assistant = assistant;
-        }
+    public boolean setAssistant(String username, String password) {
+        return assistant.getUsername().equals(username) && assistant.getPassword().equals(password);
     }
 }

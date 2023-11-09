@@ -1,10 +1,8 @@
 package service;
 
-import entity.User;
-
 import java.lang.reflect.Type;
 
-public interface SingleFileHandler<T extends User> {
+public interface FileHandler<T> {
     void saveToFile(String filePath, T data);
     T readFromFile(String filePath, Type type);
 }

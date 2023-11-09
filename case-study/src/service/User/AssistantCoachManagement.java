@@ -1,8 +1,9 @@
-package service;
+package service.User;
 
 import constant.Constants;
 import entity.AssistantCoach;
 import com.google.gson.reflect.TypeToken;
+
 import java.lang.reflect.Type;
 
 public class AssistantCoachManagement {

@@ -1,8 +1,9 @@
-package service;
+package service.User;
 
 import com.google.gson.reflect.TypeToken;
 import constant.Constants;
 import entity.Player;
+import service.Observer;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class SingletonPlayerListManagement implements Observer {
     private static SingletonPlayerListManagement instance;
 
     private SingletonPlayerListManagement() {
-        fileHandler = new JsonFileHandler();
+        fileHandler = new JsonMyFileHandler();
         this.player = (ArrayList<Player>) fileHandler.readFromFile(Constants.PLAYER_FILE_PATH, PLAYERTYPE);
     }
 

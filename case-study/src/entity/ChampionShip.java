@@ -3,12 +3,12 @@ package entity;
 public class ChampionShip {
     private String nameOfLeague;
     private int timesOfChampionship;
-    private int totalCup;
+    private String area;
 
-    public ChampionShip(String nameOfLeague, int timesOfChampionship, int totalCup) {
+    public ChampionShip(String area, String nameOfLeague, int timesOfChampionship) {
         this.nameOfLeague = nameOfLeague;
         this.timesOfChampionship = timesOfChampionship;
-        this.totalCup = totalCup;
+        this.area = area;
     }
 
     public String getNameOfLeague() {
@@ -27,11 +27,11 @@ public class ChampionShip {
         this.timesOfChampionship = timesOfChampionship;
     }
 
-    public int getTotalCup() {
-        return totalCup;
+    public String getArea() {
+        return area;
     }
 
-    public void setTotalCup(int totalCup) {
-        this.totalCup = totalCup;
+    public void setArea(String area) {
+        this.area = area;
     }
 }

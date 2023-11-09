@@ -1,0 +1,11 @@
+{
+  "userType": "TECHNICALDIRECTOR",
+  "name": "Ramón Planes Novau",
+  "Age": 56,
+  "gender": "Male",
+  "JobBefore": "Technical Assistant",
+  "yearsContract": 3,
+  "salary": 200000.0,
+  "username": "Ramón",
+  "password": "011"
+}

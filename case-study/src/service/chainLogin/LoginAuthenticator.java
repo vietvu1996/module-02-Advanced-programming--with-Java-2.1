@@ -1,9 +1,6 @@
 package service.chainLogin;
 
-import service.LoginHandler;
-import service.Request;
-import service.ValidatePlayerCorrect;
-import service.Validator;
+import service.*;
 
 public class LoginAuthenticator implements LoginHandler {
     private LoginHandler nextHandler;
@@ -16,8 +13,11 @@ public class LoginAuthenticator implements LoginHandler {
     public boolean doHandle(Request request) {
         String username = request.getUsername();
         String password = request.getPassword();
-        Validator validator = new ValidatePlayerCorrect(username, password);
-        return validator.isCheck();
+        Validator validator1 = new ValidatePlayerCorrect(username, password);
+        Validator validator2 = new ValidateChairmanCorrect(username, password);
+//        validator2.isCheck();
+        return validator1.isCheck() || validator2.isCheck();
+
     }
 
     @Override

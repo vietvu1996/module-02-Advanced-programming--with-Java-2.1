@@ -1,6 +1,8 @@
 package service;
 
 import menu.Command;
+import service.User.SingletonCurrentPlayer;
+import service.User.SingletonPlayerListManagement;
 
 import java.util.Scanner;
 

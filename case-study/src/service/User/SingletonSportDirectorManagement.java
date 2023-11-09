@@ -1,8 +1,7 @@
-package service;
+package service.User;
 
 import com.google.gson.reflect.TypeToken;
 import constant.Constants;
-import entity.Chairman;
 import entity.SportDirector;
 
 import java.lang.reflect.Type;

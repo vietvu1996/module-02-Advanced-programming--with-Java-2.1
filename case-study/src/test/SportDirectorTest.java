@@ -3,8 +3,8 @@ package test;
 import constant.Constants;
 import entity.SportDirector;
 import entity.UserType;
-import service.JsonSingleFileHandler;
-import service.SingleFileHandler;
+import service.User.JsonSingleFileHandler;
+import service.User.SingleFileHandler;
 
 public class SportDirectorTest {
     public static void main(String[] args) {

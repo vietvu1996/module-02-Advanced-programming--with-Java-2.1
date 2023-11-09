@@ -1,13 +1,14 @@
-package service;
+package service.User;
 
 import entity.Chairman;
+import entity.UserType;
 
 public class SingletonChairman {
-    private Chairman chairman;
+    private final Chairman chairman;
     private static SingletonChairman instance;
 
-    public SingletonChairman(){
-        chairman = SingletonChairman.getInstance().getChairman();
+    private SingletonChairman(){
+        chairman = new Chairman(UserType.CHAIRMAN, "Joan", "567", "Joan Laporta i Estruch",61, "Male", "Lawyer" );
     }
 
     public static SingletonChairman getInstance(){
@@ -25,9 +26,7 @@ public class SingletonChairman {
         return chairman.getName();
     }
 
-    public void setChairman(Chairman chairman, String username, String password) {
-        if(chairman.getUsername().equals(username) && chairman.getPassword().equals(password)){
-            this.chairman = chairman;
-        }
+    public boolean setChairman(String username, String password) {
+        return chairman.getUsername().equals(username) && chairman.getPassword().equals(password);
     }
 }

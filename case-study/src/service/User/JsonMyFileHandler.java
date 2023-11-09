@@ -1,21 +1,21 @@
-package service;
+package service.User;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import entity.User;
 
 import java.io.*;
 import java.lang.reflect.Type;
+import java.util.List;
 
-public class JsonSingleFileHandler implements SingleFileHandler{
+public class JsonMyFileHandler implements MyFileHandler {
     private final Gson GSON;
 
-    public JsonSingleFileHandler() {
+    public JsonMyFileHandler() {
         this.GSON = new GsonBuilder().setPrettyPrinting().create();
     }
 
     @Override
-    public void saveToFile(String filePath, User data) {
+    public void saveToFile(String filePath, List<?> data) {
         try {
             Writer writer = new FileWriter(filePath);
             GSON.toJson(data, writer);
@@ -28,7 +28,7 @@ public class JsonSingleFileHandler implements SingleFileHandler{
     }
 
     @Override
-    public User readFromFile(String filePath, Type type) {
+    public List<?> readFromFile(String filePath, Type type) {
         try {
             Reader reader = new FileReader(filePath);
             return GSON.fromJson(reader, type);

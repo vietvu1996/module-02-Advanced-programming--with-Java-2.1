@@ -1,24 +1,31 @@
 package entity;
 
-public class TechnicalDirector {
+public class TechnicalDirector extends User {
+    private UserType userType;
     private String name;
     private int Age;
     private String gender;
     private String JobBefore;
-    private String achievement;
-    private int experience;
     private int yearsContract;
     private double salary;
 
-    public TechnicalDirector(String name, int age, String gender, String jobBefore, String achievement, int experience, int yearsContract, double salary) {
+    public TechnicalDirector(UserType userType, String username, String password, String name, int age, String gender, String jobBefore, int yearsContract, double salary) {
+        super(username, password);
+        this.userType = userType;
         this.name = name;
         Age = age;
         this.gender = gender;
         JobBefore = jobBefore;
-        this.achievement = achievement;
-        this.experience = experience;
         this.yearsContract = yearsContract;
         this.salary = salary;
+    }
+
+    public UserType getUserType() {
+        return userType;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
     }
 
     public String getName() {
@@ -51,22 +58,6 @@ public class TechnicalDirector {
 
     public void setJobBefore(String jobBefore) {
         JobBefore = jobBefore;
-    }
-
-    public String getAchievement() {
-        return achievement;
-    }
-
-    public void setAchievement(String achievement) {
-        this.achievement = achievement;
-    }
-
-    public int getExperience() {
-        return experience;
-    }
-
-    public void setExperience(int experience) {
-        this.experience = experience;
     }
 
     public int getYearsContract() {

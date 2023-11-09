@@ -1,4 +1,4 @@
-package service;
+package service.User;
 
 import com.google.gson.reflect.TypeToken;
 import constant.Constants;
@@ -14,7 +14,7 @@ public class SingletonCoachManagement {
     private final Type COACHTYPE = new TypeToken<ArrayList<Coach>>(){}.getType();
     private static SingletonCoachManagement instance;
     private SingletonCoachManagement(){
-        fileHandler = new JsonFileHandler();
+        fileHandler = new JsonMyFileHandler();
         this.coaches = (ArrayList<Coach>) fileHandler.readFromFile(Constants.COACH_FILE_PATH, COACHTYPE);
     }
 
