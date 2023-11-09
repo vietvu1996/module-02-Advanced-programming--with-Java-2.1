@@ -6,22 +6,22 @@ public class SingletonCurrentAssistantCoach {
     private final AssistantCoach assistant;
     private static SingletonCurrentAssistantCoach instance;
 
-    public SingletonCurrentAssistantCoach(){
+    public SingletonCurrentAssistantCoach() {
         assistant = AssistantCoachManagement.getInstance().getAssistant();
     }
 
-    public static SingletonCurrentAssistantCoach getInstance(){
-        if(instance == null){
+    public static SingletonCurrentAssistantCoach getInstance() {
+        if (instance == null) {
             instance = new SingletonCurrentAssistantCoach();
         }
         return instance;
     }
 
-    public AssistantCoach getAssistant(){
+    public AssistantCoach getAssistant() {
         return assistant;
     }
 
-    public String getAssistantName(){
+    public String getAssistantName() {
         return assistant.getFullName();
     }
 

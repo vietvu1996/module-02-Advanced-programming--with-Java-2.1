@@ -1,4 +1,6 @@
-package menu;
+package menu.MenuAssistantCoach;
+
+import menu.Command;
 
 public class EvaluatePerformance implements Command {
     @Override
