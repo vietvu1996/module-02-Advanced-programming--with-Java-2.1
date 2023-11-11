@@ -5,8 +5,6 @@ public class Team {
     private int goals;
     private int score;
 
-    public Team(){}
-
     public Team(String name) {
         this.name = name;
         this.goals = 0;
