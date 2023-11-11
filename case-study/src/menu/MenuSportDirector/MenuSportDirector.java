@@ -1,0 +1,40 @@
+package menu.MenuSportDirector;
+
+import menu.Menu;
+import menu.MenuItem;
+import menu.MenuMain;
+import menu.Navigator;
+import service.ExitCommand;
+import service.User.SingletonSportDirector;
+import java.util.Scanner;
+
+public class MenuSportDirector implements Navigator {
+    private static MenuSportDirector instance;
+    private final Scanner SCANNER = new Scanner(System.in);
+
+    private void menuSportDirector() {
+        Menu menuSportDirector = new MenuMain();
+        menuSportDirector.addMenuItem(new MenuItem("Football Match Schedule", new FootballMatchSchedule()));
+        menuSportDirector.addMenuItem(new MenuItem("Organize Sessions", new OrganizeSessions()));
+        menuSportDirector.addMenuItem(new MenuItem("Exit", new ExitCommand()));
+        int choice;
+        System.out.println("Welcome " + SingletonSportDirector.getInstance().getSportDirectorName());
+        do {
+            menuSportDirector.display();
+            choice = SCANNER.nextInt();
+            menuSportDirector.runCommand(choice - 1);
+        } while (choice != 0);
+    }
+
+    public static MenuSportDirector getInstance() {
+        if (instance == null) {
+            instance = new MenuSportDirector();
+        }
+        return instance;
+    }
+
+    @Override
+    public void navigate() {
+        menuSportDirector();
+    }
+}

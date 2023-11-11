@@ -3,15 +3,15 @@ package service.User;
 import entity.SportDirector;
 
 public class SingletonSportDirector {
-    private SportDirector sportDirector;
+    private final SportDirector sportDirector;
     private static SingletonSportDirector instance;
 
-    public SingletonSportDirector(){
-        sportDirector = SingletonSportDirector.getInstance().getSportDirector();
+    public SingletonSportDirector() {
+        sportDirector = SingletonSportDirectorManagement.getInstance().getSportDirector();
     }
 
-    public static SingletonSportDirector getInstance(){
-        if(instance == null){
+    public static SingletonSportDirector getInstance() {
+        if (instance == null) {
             instance = new SingletonSportDirector();
         }
         return instance;
@@ -21,13 +21,11 @@ public class SingletonSportDirector {
         return sportDirector;
     }
 
-    public String getSportDirectorName(){
+    public String getSportDirectorName() {
         return sportDirector.getName();
     }
 
-    public void setSportDirector(SportDirector sportDirector, String username, String password) {
-        if(sportDirector.getUsername().equals(username) && sportDirector.getPassword().equals(password)){
-            this.sportDirector = sportDirector;
-        }
+    public boolean setSportDirector(String username, String password) {
+        return sportDirector.getUsername().equals(username) && sportDirector.getPassword().equals(password);
     }
 }

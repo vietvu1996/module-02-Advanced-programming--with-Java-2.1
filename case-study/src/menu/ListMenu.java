@@ -1,5 +1,0 @@
-package menu;
-
-public enum ListMenu {
-    CHAIRMAN, TECHNICALDIRECTOR, SPORTDIRECTOR, COACH, PLAYER, FINANCE
-}

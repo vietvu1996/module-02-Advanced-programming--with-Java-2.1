@@ -3,7 +3,7 @@ package service.User;
 import entity.TechnicalDirector;
 
 public class SingletonTechnicalDirector {
-    private TechnicalDirector technicalDirector;
+    private final TechnicalDirector technicalDirector;
     private static SingletonTechnicalDirector instance;
 
     public SingletonTechnicalDirector(){
@@ -25,9 +25,7 @@ public class SingletonTechnicalDirector {
         return technicalDirector.getName();
     }
 
-    public void setTechnicalDirector(TechnicalDirector technicalDirector, String username, String password) {
-        if(technicalDirector.getUsername().equals(username) && technicalDirector.getPassword().equals(password)){
-            this.technicalDirector = technicalDirector;
-        }
+    public boolean setTechnicalDirector(String username, String password) {
+        return technicalDirector.getUsername().equals(username) && technicalDirector.getPassword().equals(password);
     }
 }

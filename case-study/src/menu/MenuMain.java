@@ -17,16 +17,14 @@ public class MenuMain implements Menu {
 
     @Override
     public void display() {
-        for (int i = 1; i < menuItems.size(); i++) {
-            System.out.println(i + ". " + menuItems.get(i).getName());
+        for (int i = 1; i <= menuItems.size(); i++) {
+            System.out.println(i + ". " + menuItems.get(i-1).getName());
         }
-        int exit = 0;
-        System.out.println(exit +". " + menuItems.get(exit).getName());
     }
 
     @Override
     public void runCommand(int index) {
-        if (index >= 0 && index < menuItems.size()) {
+        if (index >= 0 && index <= menuItems.size()) {
             menuItems.get(index).getCommand().execute();
         } else {
             System.out.println("Invalid choice, please try again");

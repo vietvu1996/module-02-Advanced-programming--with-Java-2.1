@@ -15,7 +15,7 @@ public class SingletonTechnicalDirectorManagement {
 
     private SingletonTechnicalDirectorManagement() {
         fileHandler = new JsonSingleFileHandler();
-        this.technicalDirector = (TechnicalDirector) fileHandler.readFromFile(Constants.SPORTDIRECTOR_FILE_PATH, TECHNICALDIRECTORTYPE);
+        this.technicalDirector = (TechnicalDirector) fileHandler.readFromFile(Constants.TECHNICALDIRECTOR_FILE_PATH, TECHNICALDIRECTORTYPE);
     }
 
     public static SingletonTechnicalDirectorManagement getInstance() {

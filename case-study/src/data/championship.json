@@ -10,6 +10,11 @@
     "area": "domestic"
   },
   {
+    "nameOfLeague": "Supercopa de España",
+    "timesOfChampionship": 14,
+    "area": "domestic"
+  },
+  {
     "nameOfLeague": "UEFA Champions League",
     "timesOfChampionship": 5,
     "area": "Europe"

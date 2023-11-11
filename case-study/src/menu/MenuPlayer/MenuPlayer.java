@@ -4,6 +4,7 @@ import menu.Menu;
 import menu.MenuItem;
 import menu.MenuMain;
 import menu.Navigator;
+import service.ExitCommand;
 import service.User.SingletonCurrentPlayer;
 
 import java.util.Scanner;
@@ -24,12 +25,13 @@ public class MenuPlayer implements Navigator {
         Menu menuPlayer = new MenuMain();
         menuPlayer.addMenuItem(new MenuItem("Training Session", new TrainingSession()));
         menuPlayer.addMenuItem(new MenuItem("Club Regulations", new ClubRegulations()));
+        menuPlayer.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
+        System.out.println("Welcome " + SingletonCurrentPlayer.getInstance().getCurrentPlayerName());
         do{
-            System.out.println("Welcome " + SingletonCurrentPlayer.getInstance().getCurrentPlayerName());
             menuPlayer.display();
             choice = SCANNER.nextInt();
-            menuPlayer.runCommand(choice);
+            menuPlayer.runCommand(choice-1);
         } while (choice != 0);
     }
 

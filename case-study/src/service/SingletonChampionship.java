@@ -5,7 +5,7 @@ import entity.ChampionShip;
 import java.util.List;
 
 public class SingletonChampionship {
-    private List<ChampionShip> championShips;
+    private final List<ChampionShip> championShips;
     private ChampionShip championShip;
     private static SingletonChampionship instance;
     

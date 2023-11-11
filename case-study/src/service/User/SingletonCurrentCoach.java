@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SingletonCurrentCoach {
     private Coach currentCoach;
-    private List<Coach> coaches;
+    private final List<Coach> coaches;
     private static SingletonCurrentCoach instance;
 
     private SingletonCurrentCoach(){
@@ -27,13 +27,14 @@ public class SingletonCurrentCoach {
         return currentCoach.getFullName();
     }
 
-    public void setCoach(String username, String password) {
+    public boolean setCoach(String username, String password) {
         for (Coach coach: coaches
              ) {
             if(coach.getUsername().equals(username) && coach.getPassword().equals(password)){
                 this.currentCoach = coach;
-                return;
+                return true;
             }
         }
+        return false;
     }
 }

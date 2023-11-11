@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SingletonChampionshipManagement implements Observer {
-    private List<ChampionShip>  championShips;
-    private MyFileHandler fileHandler;
+    private final List<ChampionShip>  championShips;
+    private final MyFileHandler fileHandler;
     private final Type CHAMPIONSHIPTYPE = new TypeToken<ArrayList<ChampionShip>>(){}.getType();
     private static SingletonChampionshipManagement instance;
 
@@ -29,10 +29,6 @@ public class SingletonChampionshipManagement implements Observer {
 
     public List<ChampionShip> getChampionShips() {
         return championShips;
-    }
-
-    public void setChampionShips(List<ChampionShip> championShips) {
-        this.championShips = championShips;
     }
 
     @Override
