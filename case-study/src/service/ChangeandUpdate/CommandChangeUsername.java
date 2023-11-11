@@ -1,4 +1,4 @@
-package service;
+package service.ChangeandUpdate;
 
 import menu.Command;
 import service.User.SingletonCurrentPlayer;

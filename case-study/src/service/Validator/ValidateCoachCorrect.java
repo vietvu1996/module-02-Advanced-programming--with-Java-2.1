@@ -1,9 +1,8 @@
-package service;
+package service.Validator;
 
 import entity.Coach;
 import entity.User;
 import service.User.SingletonCoachManagement;
-import service.Validator;
 
 import java.util.List;
 

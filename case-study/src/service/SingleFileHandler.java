@@ -1,4 +1,4 @@
-package service.User;
+package service;
 
 import entity.User;
 

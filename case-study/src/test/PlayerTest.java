@@ -4,8 +4,8 @@ import constant.Constants;
 import entity.User;
 import entity.PlayerFactory;
 import entity.UserType;
-import service.User.JsonMyFileHandler;
-import service.User.MyFileHandler;
+import service.JsonMyFileHandler;
+import service.MyFileHandler;
 
 import java.util.ArrayList;
 import java.util.List;

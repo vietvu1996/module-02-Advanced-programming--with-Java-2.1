@@ -1,4 +1,4 @@
-package service;
+package service.chainLogin;
 
 import menu.Command;
 

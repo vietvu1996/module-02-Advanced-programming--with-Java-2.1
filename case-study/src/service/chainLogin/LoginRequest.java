@@ -1,7 +1,5 @@
 package service.chainLogin;
 
-import service.Request;
-
 public class LoginRequest implements Request {
     private final String username;
     private final String password;

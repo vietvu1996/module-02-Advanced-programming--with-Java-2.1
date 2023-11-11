@@ -1,7 +1,7 @@
 package menu;
 
-import service.ExitCommand;
-import service.LoginCommand;
+import service.chainLogin.ExitCommand;
+import service.chainLogin.LoginCommand;
 import java.util.Scanner;
 
 public class NavigationMenuLogin implements Navigator {

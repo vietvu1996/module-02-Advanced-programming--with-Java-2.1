@@ -1,4 +1,4 @@
-package service;
+package service.Validator;
 
 import entity.Player;
 import entity.User;

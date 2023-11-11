@@ -1,4 +1,4 @@
-package service;
+package service.Validator;
 
 import entity.AssistantCoach;
 import service.User.AssistantCoachManagement;

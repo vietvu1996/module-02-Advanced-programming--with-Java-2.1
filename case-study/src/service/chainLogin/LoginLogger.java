@@ -1,7 +1,5 @@
 package service.chainLogin;
 
-import service.LoginHandler;
-import service.Request;
 import service.User.*;
 
 public class LoginLogger implements LoginHandler {

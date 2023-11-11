@@ -1,7 +1,7 @@
-package service;
+package service.Tournament;
 
 public class Team {
-    private String name;
+    private final String name;
     private int goals;
     private int score;
 

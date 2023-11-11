@@ -4,7 +4,7 @@ import menu.Menu;
 import menu.MenuItem;
 import menu.MenuMain;
 import menu.Navigator;
-import service.ExitCommand;
+import service.chainLogin.ExitCommand;
 import service.User.SingletonCurrentCoach;
 
 import java.util.Scanner;

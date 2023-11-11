@@ -1,6 +1,6 @@
 package service.chainLogin;
 
-import service.*;
+import service.Validator.*;
 
 public class LoginAuthenticator implements LoginHandler {
     private final LoginHandler nextHandler;

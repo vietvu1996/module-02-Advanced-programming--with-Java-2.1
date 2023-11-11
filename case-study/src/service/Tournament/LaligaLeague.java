@@ -1,19 +1,20 @@
-package service;
+package service.Tournament;
 
 import menu.Command;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Tournament implements Command {
-    private String name;
-    private Map<String, Team> teams;
+public class LaligaLeague implements Command {
+    private final String nameTournament;
+    private final Map<String, Team> laligaTeams;
+
 
 //    public Tournament() {}
 
-    public Tournament(String name) {
-        this.name = name;
-        this.teams = new HashMap<>();
+    public LaligaLeague(String nameTournament) {
+        this.nameTournament = nameTournament;
+        this.laligaTeams = new HashMap<>();
     }
 
     public void laligaLeague() {
@@ -38,35 +39,35 @@ public class Tournament implements Command {
         addTeam(team8);
         addTeam(team9);
         addTeam(team10);
-
     }
 
-    public String getName() {
-        return name;
-    }
 
+    public String getNameTournament() {
+        return nameTournament;
+    }
 
     public void addTeam(Team team) {
-        teams.put(team.getName(), team);
+        laligaTeams.put(team.getName(), team);
     }
 
     public void displayTeams() {
-        for (Map.Entry<String, Team> entry : teams.entrySet()) {
+        for (Map.Entry<String, Team> entry : laligaTeams.entrySet()) {
             System.out.println("Team: " + entry.getKey() + ", Goals: " + entry.getValue().getGoals() + ", Score: " + entry.getValue().getScore());
         }
     }
 
     @Override
     public void execute() {
-       laligaLeague();
-       displayTeams();
+        laligaLeague();
+        displayTeams();
     }
 
     public static void main(String[] args) {
         System.out.println();
-        Tournament tournament = new Tournament("La liga");
-        System.out.println("Tournament name: " + tournament.getName());
+        LaligaLeague laligaLeague = new LaligaLeague("La liga");
+        System.out.println("Tournament name: " + laligaLeague.getNameTournament());
         System.out.println();
-        tournament.execute();
+        laligaLeague.execute();
+        System.out.println();
     }
 }

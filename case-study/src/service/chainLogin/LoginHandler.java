@@ -1,4 +1,4 @@
-package service;
+package service.chainLogin;
 
 public interface LoginHandler {
     boolean doHandle(Request request);

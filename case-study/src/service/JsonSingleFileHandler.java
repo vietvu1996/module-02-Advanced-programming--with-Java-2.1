@@ -1,4 +1,4 @@
-package service.User;
+package service;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,7 +7,7 @@ import entity.User;
 import java.io.*;
 import java.lang.reflect.Type;
 
-public class JsonSingleFileHandler implements SingleFileHandler{
+public class JsonSingleFileHandler implements SingleFileHandler {
     private final Gson GSON;
 
     public JsonSingleFileHandler() {

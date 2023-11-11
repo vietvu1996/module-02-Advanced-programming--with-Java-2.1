@@ -1,10 +1,6 @@
-package service;
+package service.chainLogin;
 
 import menu.Command;
-import service.chainLogin.LoginAuthenticator;
-import service.chainLogin.LoginLogger;
-import service.chainLogin.LoginRedirect;
-import service.chainLogin.LoginRequest;
 
 import java.util.Scanner;
 

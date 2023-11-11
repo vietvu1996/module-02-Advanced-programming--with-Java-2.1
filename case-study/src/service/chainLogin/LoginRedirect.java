@@ -7,8 +7,6 @@ import menu.MenuPlayer.MenuPlayer;
 import menu.MenuSportDirector.MenuSportDirector;
 import menu.MenuTechnicalDirector.MenuTechnicalDirector;
 import menu.Navigator;
-import service.LoginHandler;
-import service.Request;
 import service.User.*;
 
 public class LoginRedirect implements LoginHandler {
