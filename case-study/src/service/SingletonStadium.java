@@ -3,7 +3,7 @@ package service;
 import entity.Stadium;
 
 public class SingletonStadium {
-    private Stadium stadium;
+    private final Stadium stadium;
     private static SingletonStadium instance;
     public SingletonStadium(){
         stadium = SingletonStadiumManagement.getInstance().getStadium();

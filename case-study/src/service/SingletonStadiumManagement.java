@@ -3,6 +3,8 @@ package service;
 import com.google.gson.reflect.TypeToken;
 import constant.Constants;
 import entity.Stadium;
+import service.GSON.FileHandler;
+import service.GSON.JsonFileHandler;
 
 import java.lang.reflect.Type;
 
@@ -10,8 +12,7 @@ public class SingletonStadiumManagement {
     private Stadium stadium;
     private FileHandler fileHandler;
     private static SingletonStadiumManagement instance;
-    private final Type STADIUMTYPE = new TypeToken<Stadium>() {
-    }.getType();
+    private final Type STADIUMTYPE = new TypeToken<Stadium>() {}.getType();
 
     public static SingletonStadiumManagement getInstance() {
         if (instance == null) {

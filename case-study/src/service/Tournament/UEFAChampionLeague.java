@@ -13,6 +13,9 @@ public class UEFAChampionLeague implements Command {
         this.nameTournament = nameTournament;
         this.uefaChampionLeagueTeams = new HashMap<>();
     }
+    public Map<String ,Team> getUefaChampionLeagueTeams(){
+        return uefaChampionLeagueTeams;
+    }
 
     public void uefaChampionLeagueTournament(){
         Team team11 = new Team("AFC Ajax");
@@ -50,6 +53,24 @@ public class UEFAChampionLeague implements Command {
         for (Map.Entry<String, Team> entry : uefaChampionLeagueTeams.entrySet()) {
             System.out.println("Team: " + entry.getKey() + ", Goals: " + entry.getValue().getGoals() + ", Score: " + entry.getValue().getScore());
         }
+    }
+
+    public boolean checkIfWinning() {
+        for (Map.Entry<String, Team> entry : uefaChampionLeagueTeams.entrySet()) {
+            String winningTeam = null;
+            int highestScore = 0;
+            for (String team : uefaChampionLeagueTeams.keySet()) {
+                int score = entry.getValue().getScore();
+                if (score > highestScore) {
+                    highestScore = score;
+                    winningTeam = team;
+                }
+            }
+            if (winningTeam != null && !winningTeam.equals(entry.getKey())) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override

@@ -3,8 +3,8 @@ package test;
 import constant.Constants;
 import entity.Coach;
 import entity.UserType;
-import service.JsonMyFileHandler;
-import service.MyFileHandler;
+import service.GSON.JsonMyFileHandler;
+import service.GSON.MyFileHandler;
 
 import java.util.ArrayList;
 import java.util.List;

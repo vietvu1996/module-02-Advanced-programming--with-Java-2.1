@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class LaligaLeague implements Command {
     private final String nameTournament;
-    private final Map<String, Team> laligaTeams;
+    public Map<String, Team> laligaTeams;
 
 
 //    public Tournament() {}
@@ -15,6 +15,9 @@ public class LaligaLeague implements Command {
     public LaligaLeague(String nameTournament) {
         this.nameTournament = nameTournament;
         this.laligaTeams = new HashMap<>();
+    }
+    public  Map<String,Team> getLaligaTeams(){
+        return laligaTeams;
     }
 
     public void laligaLeague() {
@@ -39,6 +42,7 @@ public class LaligaLeague implements Command {
         addTeam(team8);
         addTeam(team9);
         addTeam(team10);
+
     }
 
 
@@ -54,6 +58,24 @@ public class LaligaLeague implements Command {
         for (Map.Entry<String, Team> entry : laligaTeams.entrySet()) {
             System.out.println("Team: " + entry.getKey() + ", Goals: " + entry.getValue().getGoals() + ", Score: " + entry.getValue().getScore());
         }
+    }
+
+    public boolean checkIfWinning() {
+        for (Map.Entry<String, Team> entry : laligaTeams.entrySet()) {
+            String winningTeam = null;
+            int highestScore = 0;
+            for (String team : laligaTeams.keySet()) {
+                int score = entry.getValue().getScore();
+                if (score > highestScore) {
+                    highestScore = score;
+                    winningTeam = team;
+                }
+            }
+            if (winningTeam != null && !winningTeam.equals(entry.getKey())) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override

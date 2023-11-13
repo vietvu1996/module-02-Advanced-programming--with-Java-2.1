@@ -3,8 +3,8 @@ package test;
 import constant.Constants;
 import entity.TechnicalDirector;
 import entity.UserType;
-import service.JsonSingleFileHandler;
-import service.SingleFileHandler;
+import service.GSON.JsonSingleFileHandler;
+import service.GSON.SingleFileHandler;
 
 public class TechnicalDirectorTest {
     public static void main(String[] args) {

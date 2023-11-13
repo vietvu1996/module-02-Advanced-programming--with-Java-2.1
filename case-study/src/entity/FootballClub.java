@@ -4,11 +4,15 @@ public class FootballClub {
     private String clubFullName;
     private String clubShortName;
     private String stripColour;
+    private String Slogan;
+    private String nameOfStadium;
 
-    public FootballClub(String clubFullName, String clubShortName, String stripColour) {
+    public FootballClub(String clubFullName, String clubShortName, String stripColour, String slogan, String nameOfStadium) {
         this.clubFullName = clubFullName;
         this.clubShortName = clubShortName;
         this.stripColour = stripColour;
+        Slogan = slogan;
+        this.nameOfStadium = nameOfStadium;
     }
 
     public String getClubFullName() {
@@ -35,12 +39,20 @@ public class FootballClub {
         this.stripColour = stripColour;
     }
 
-    @Override
-    public String toString() {
-        return "entity.FootballClub {" +
-                "clubFullName= '" + clubFullName + '\'' +
-                ", clubShortName= '" + clubShortName + '\'' +
-                ", stripColour= '" + stripColour + '\'' +
-                '}';
+    public String getSlogan() {
+        return Slogan;
     }
+
+    public void setSlogan(String slogan) {
+        Slogan = slogan;
+    }
+
+    public String getNameOfStadium() {
+        return nameOfStadium;
+    }
+
+    public void setNameOfStadium(String nameOfStadium) {
+        this.nameOfStadium = nameOfStadium;
+    }
+
 }

@@ -2,8 +2,8 @@ package test;
 
 import constant.Constants;
 import entity.ChampionShip;
-import service.JsonMyFileHandler;
-import service.MyFileHandler;
+import service.GSON.JsonMyFileHandler;
+import service.GSON.MyFileHandler;
 
 import java.util.ArrayList;
 import java.util.List;

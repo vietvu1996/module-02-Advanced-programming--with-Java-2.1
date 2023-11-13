@@ -1,4 +1,4 @@
-package service;
+package service.GSON;
 
 import entity.User;
 

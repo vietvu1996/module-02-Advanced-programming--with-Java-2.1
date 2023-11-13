@@ -1,4 +1,4 @@
-package service;
+package service.GSON;
 
 import java.lang.reflect.Type;
 

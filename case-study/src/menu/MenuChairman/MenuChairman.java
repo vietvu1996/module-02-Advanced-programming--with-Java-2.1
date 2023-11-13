@@ -15,7 +15,7 @@ public class MenuChairman implements Navigator {
 
     private void menuChairman() {
         Menu menuChairman = new MenuMain();
-        menuChairman.addMenuItem(new MenuItem("Overall Management",new CommandOverallManagement()));
+        menuChairman.addMenuItem(new MenuItem("Club goals", new ClubGoals()));
         menuChairman.addMenuItem(new MenuItem("Search for sponsors", new SearchForSponsors()));
         menuChairman.addMenuItem(new MenuItem("Important decision", new ImportantDecision()));
         menuChairman.addMenuItem(new MenuItem("Exit", new ExitCommand()));

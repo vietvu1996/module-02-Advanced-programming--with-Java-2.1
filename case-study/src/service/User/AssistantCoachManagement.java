@@ -3,8 +3,8 @@ package service.User;
 import constant.Constants;
 import entity.AssistantCoach;
 import com.google.gson.reflect.TypeToken;
-import service.JsonSingleFileHandler;
-import service.SingleFileHandler;
+import service.GSON.JsonSingleFileHandler;
+import service.GSON.SingleFileHandler;
 
 import java.lang.reflect.Type;
 

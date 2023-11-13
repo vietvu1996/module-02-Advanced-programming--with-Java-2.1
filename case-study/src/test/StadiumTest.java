@@ -2,8 +2,8 @@ package test;
 
 import constant.Constants;
 import entity.Stadium;
-import service.FileHandler;
-import service.JsonFileHandler;
+import service.GSON.FileHandler;
+import service.GSON.JsonFileHandler;
 
 public class StadiumTest {
     public static void main(String[] args) {
