@@ -1,7 +1,11 @@
 package service.Tournament;
 
 public class Team {
-    private final String name;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private  String name;
     private int goals;
     private int score;
 
@@ -29,5 +33,10 @@ public class Team {
 
     public void updateGoals(int goals){
         this.goals += goals;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

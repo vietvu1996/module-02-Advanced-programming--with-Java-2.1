@@ -73,4 +73,14 @@ public class FootballMatch implements Command {
     public void execute() {
         simulateResult();
     }
+
+    @Override
+    public String toString() {
+        return "FootballMatch{" +
+                "homeTeam=" + homeTeam +
+                ", awayTeam=" + awayTeam +
+                ", homeScore=" + homeScore +
+                ", awayScore=" + awayScore +
+                '}';
+    }
 }

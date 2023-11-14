@@ -39,7 +39,6 @@ public class SearchForSponsors implements Command {
         for (Sponsor sponsor : sponsors) {
             dealWithSponsor(sponsor);
         }
-
     }
 
     private void dealWithSponsor(Sponsor sponsor) {
