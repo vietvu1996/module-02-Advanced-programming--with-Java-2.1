@@ -2,20 +2,22 @@ package menu;
 
 import service.chainLogin.ExitCommand;
 import service.chainLogin.LoginCommand;
+
 import java.util.Scanner;
 
 public class NavigationMenuLogin implements Navigator {
 
     private final Scanner SCANNER = new Scanner(System.in);
+
     private void navigationLogin() {
         Menu menuLogin = new MenuMain();
         menuLogin.addMenuItem(new MenuItem("Login", new LoginCommand()));
         menuLogin.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
-        do{
-           menuLogin.display();
+        do {
+            menuLogin.display();
             choice = SCANNER.nextInt();
-            menuLogin.runCommand(choice-1);
+            menuLogin.runCommand(choice - 1);
         } while (choice != 0);
     }
 
@@ -23,6 +25,7 @@ public class NavigationMenuLogin implements Navigator {
     public void navigate() {
         navigationLogin();
     }
+
     public static void main(String[] args) {
         NavigationMenuLogin navigationMenuLogin = new NavigationMenuLogin();
         navigationMenuLogin.navigate();

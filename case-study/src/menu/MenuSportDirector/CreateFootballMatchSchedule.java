@@ -113,30 +113,33 @@ public class CreateFootballMatchSchedule implements Command {
 
     @Override
     public void execute() {
-        System.out.println("Laliga League Matches:");
-        System.out.println();
-        createLaLigaMatches();
-        System.out.println("UEFA Champions League Matches:");
-        System.out.println();
+        LaligaLeague laligaLeague = new LaligaLeague("La Liga");
+        UEFAChampionLeague uefaChampionLeague = new UEFAChampionLeague("UEFA Champion League");
 
-        createUCLMatches();
-        showLaLigaMatches();
-        showUefaMatches();
-    }
-
-    public static void main(String[] args) {
-        LaligaLeague laligaLeague = new LaligaLeague("La liga");
         System.out.println("Tournament name: " + laligaLeague.getNameTournament());
         System.out.println();
         laligaLeague.execute();
         System.out.println();
-        UEFAChampionLeague uefaChampionLeague = new UEFAChampionLeague("UEFA Champion League");
+
         System.out.println("Tournament name: " + uefaChampionLeague.getNameTournament());
         System.out.println();
         uefaChampionLeague.execute();
         System.out.println();
 
-        CreateFootballMatchSchedule createFootballMatchSchedule = new CreateFootballMatchSchedule(laligaLeague.getLaligaTeams(), uefaChampionLeague.getUefaChampionLeagueTeams());
-        createFootballMatchSchedule.execute();
+        CreateFootballMatchSchedule matchSchedule = new CreateFootballMatchSchedule(
+                laligaLeague.getLaligaTeams(),
+                uefaChampionLeague.getUefaChampionLeagueTeams()
+        );
+
+        matchSchedule.createLaLigaMatches();
+        matchSchedule.createUCLMatches();
+
+        System.out.println("La Liga Matches:");
+        matchSchedule.showLaLigaMatches();
+        System.out.println();
+
+        System.out.println("UEFA Matches:");
+        matchSchedule.showUefaMatches();
     }
+
 }
