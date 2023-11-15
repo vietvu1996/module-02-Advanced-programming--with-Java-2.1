@@ -14,8 +14,8 @@ public class MenuSportDirector implements Navigator {
 
     private void menuSportDirector() {
         Menu menuSportDirector = new MenuMain();
-        menuSportDirector.addMenuItem(new MenuItem("Football Match Schedule", new FootballMatchSchedule()));
-        menuSportDirector.addMenuItem(new MenuItem("Organize Sessions", new OrganizeSessions()));
+        menuSportDirector.addMenuItem(new MenuItem("Football Match Schedule", new CreateFootballMatchSchedule()));
+        menuSportDirector.addMenuItem(new MenuItem("Change Schedule, Reschedule", new ReSchedule()));
         menuSportDirector.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
         System.out.println("Welcome " + SingletonSportDirector.getInstance().getSportDirectorName());

@@ -59,15 +59,16 @@ public class FootballMatch implements Command {
         awayScore = random.nextInt(6);
 
         if (homeScore > awayScore) {
-            homeTeam.updateScore(homeTeam.getScore() + 3);
+            homeTeam.setScore(homeTeam.getScore() + 3);
         } else if (homeScore < awayScore) {
-            awayTeam.updateScore(awayTeam.getScore() + 3);
+            awayTeam.setScore(awayTeam.getScore() + 3);
         } else {
-            homeTeam.updateScore(homeTeam.getScore() + 1);
-            awayTeam.updateScore(homeTeam.getScore() + 1);
+            homeTeam.setScore(homeTeam.getScore() + 1);
+            awayTeam.setScore(homeTeam.getScore() + 1);
         }
-        String result = homeTeam.getName() + " " + homeScore + " - " + awayTeam.getName() + " " + awayScore;
+        System.out.println(homeTeam.getName() + " " + homeScore + " - " + awayTeam.getName() + " " + awayScore);
     }
+
 
     @Override
     public void execute() {

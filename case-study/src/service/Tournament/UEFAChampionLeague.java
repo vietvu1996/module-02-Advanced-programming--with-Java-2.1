@@ -13,11 +13,12 @@ public class UEFAChampionLeague implements Command {
         this.nameTournament = nameTournament;
         this.uefaChampionLeagueTeams = new HashMap<>();
     }
-    public Map<String ,Team> getUefaChampionLeagueTeams(){
+
+    public Map<String, Team> getUefaChampionLeagueTeams() {
         return uefaChampionLeagueTeams;
     }
 
-    public void uefaChampionLeagueTournament(){
+    public void uefaChampionLeagueTournament() {
         Team team11 = new Team("AFC Ajax");
         Team team12 = new Team("Liverpool FC");
         Team team13 = new Team("FC Porto");
@@ -39,7 +40,40 @@ public class UEFAChampionLeague implements Command {
         addTeam(team18);
         addTeam(team19);
         addTeam(team20);
+
+
+        team11.setScore(11);
+        team12.setScore(12);
+        team13.setScore(5);
+        team14.setScore(13);
+        team15.setScore(11);
+        team16.setScore(16);
+        team17.setScore(17);
+        team18.setScore(18);
+        team19.setScore(17);
+        team20.setScore(11);
     }
+
+    public boolean checkIfWinning() {
+        String winningTeam = null;
+        int highestScore = 0;
+        for (Map.Entry<String, Team> entry : uefaChampionLeagueTeams.entrySet()) {
+            int score = entry.getValue().getScore();
+            if (score > highestScore) {
+                highestScore = score;
+                winningTeam = entry.getKey();
+            }
+        }
+        System.out.println();
+        System.out.println("The champion is: " + winningTeam + " with score: " + highestScore);
+        for (String team : uefaChampionLeagueTeams.keySet()) {
+            if (!team.equals(winningTeam)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     public String getNameTournament() {
         return nameTournament;
@@ -55,28 +89,12 @@ public class UEFAChampionLeague implements Command {
         }
     }
 
-    public boolean checkIfWinning() {
-        for (Map.Entry<String, Team> entry : uefaChampionLeagueTeams.entrySet()) {
-            String winningTeam = null;
-            int highestScore = 0;
-            for (String team : uefaChampionLeagueTeams.keySet()) {
-                int score = entry.getValue().getScore();
-                if (score > highestScore) {
-                    highestScore = score;
-                    winningTeam = team;
-                }
-            }
-            if (winningTeam != null && !winningTeam.equals(entry.getKey())) {
-                return false;
-            }
-        }
-        return true;
-    }
 
     @Override
     public void execute() {
         uefaChampionLeagueTournament();
         displayTeams();
+        checkIfWinning();
     }
 
     public static void main(String[] args) {
