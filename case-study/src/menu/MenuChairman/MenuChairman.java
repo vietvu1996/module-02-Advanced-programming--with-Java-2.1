@@ -20,7 +20,7 @@ public class MenuChairman implements Navigator {
         menuChairman.addMenuItem(new MenuItem("Important decision", new ImportantDecision()));
         menuChairman.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
-        System.out.println("Welcome " + SingletonChairman.getInstance().getChairmanName());
+        System.out.println("Welcome Chairman " + SingletonChairman.getInstance().getChairmanName());
         do{
             menuChairman.display();
             choice = SCANNER.nextInt();

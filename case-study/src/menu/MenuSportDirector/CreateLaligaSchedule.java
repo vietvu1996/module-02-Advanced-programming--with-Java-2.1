@@ -8,16 +8,16 @@ import service.Tournament.UEFAChampionLeague;
 import java.time.LocalDate;
 import java.util.*;
 
-public class CreateFootballMatchSchedule implements Command {
-    private Map<String, Team> uefaTeams;
-    private List<FootballMatch> uclMatches;
+public class CreateLaligaSchedule implements Command {
+    private Map<String, Team> laligaTeams;
+    private List<FootballMatch> laLigaMatches;
 
-    public CreateFootballMatchSchedule() {
+    public CreateLaligaSchedule() {
     }
 
-    public CreateFootballMatchSchedule(Map<String, Team> uefaTeams) {
-        this.uefaTeams = uefaTeams;
-        this.uclMatches = new ArrayList<>();
+    public CreateLaligaSchedule(Map<String, Team> laligaTeams) {
+        this.laligaTeams = laligaTeams;
+        this.laLigaMatches = new ArrayList<>();
     }
 
     public List<LocalDate> generateAvailableDates(List<LocalDate> occupiedDates) {
@@ -56,10 +56,9 @@ public class CreateFootballMatchSchedule implements Command {
     }
 
     //  Method to create the matches for La Liga
-
-    public List<FootballMatch> createUCLMatches() {
-        List<LocalDate> availableDates = generateAvailableDates(getOccupiedUefaMatchesDates(uclMatches));
-        List<String> teams = new ArrayList<>(uefaTeams.keySet());
+    public List<FootballMatch> createLaLigaMatches() {
+        List<LocalDate> availableDates = generateAvailableDates(getOccupiedLaligaMatchesDates(laLigaMatches));
+        List<String> teams = new ArrayList<>(laligaTeams.keySet());
         Collections.shuffle(teams);
         int n = teams.size(); // 10 teams
         int half = n / 2; // first half and second half
@@ -68,31 +67,32 @@ public class CreateFootballMatchSchedule implements Command {
                 Team homeTeam = new Team(teams.get(i)); // left to right
                 Team awayTeam = new Team(teams.get(n - 1 - i)); // right to left
                 LocalDate matchDate = getRandomDateFromList(availableDates);
-                uclMatches.add(new FootballMatch(homeTeam, awayTeam, matchDate));
+                laLigaMatches.add(new FootballMatch(homeTeam, awayTeam, matchDate));
                 availableDates.remove(matchDate);
             }
             Collections.rotate(teams.subList(1, n), 1);// start from 1 to n, but get from 1 to n-1
         } // bring n from the last to 2 after 1
         for (int i = 0; i < n * (n - 1) / 2; i++) {
-            FootballMatch originalMatch = uclMatches.get(i); //swap between homeTeam and awayTeam
+            FootballMatch originalMatch = laLigaMatches.get(i); //swap between homeTeam and awayTeam
             Team homeTeam = originalMatch.getAwayTeam();
             Team awayTeam = originalMatch.getHomeTeam();
             LocalDate matchDate = getRandomDateFromList(availableDates);
-            uclMatches.add(new FootballMatch(homeTeam, awayTeam, matchDate));
+            laLigaMatches.add(new FootballMatch(homeTeam, awayTeam, matchDate));
+
             availableDates.remove(matchDate);
         }
-        return uclMatches;
+        return laLigaMatches;
     }
 
-    public void showUefaMatches() {
+    public void showLaLigaMatches() {
         int round = 1;
         int matchCount = 0;
-        for (FootballMatch match : uclMatches) {
+        for (FootballMatch match : laLigaMatches) {
             if (matchCount == 0) { // use only once
                 System.out.println("Home matches: ");
                 System.out.println();
             }
-            if (matchCount == uefaTeams.size() * (uefaTeams.size() - 1) / 2) // Matches count = 45; formula = 10 * 9 / 2
+            if (matchCount == laligaTeams.size() * (laligaTeams.size() - 1) / 2) // Matches count = 45; formula = 10 * 9 / 2
             {
                 System.out.println();
                 System.out.println("Away matches: ");
@@ -100,7 +100,7 @@ public class CreateFootballMatchSchedule implements Command {
             }
             System.out.println("Round " + round + ": " + match);
             matchCount++; // when matchCount = 45, jump into the second if condition
-            if (matchCount % (uefaTeams.size() - 1) == 0) { // each time, when matchCount = 9
+            if (matchCount % (laligaTeams.size() - 1) == 0) { // each time, when matchCount = 9
                 round++;
             }
         }
@@ -109,26 +109,28 @@ public class CreateFootballMatchSchedule implements Command {
     @Override
     public void execute() {
         LaligaLeague laligaLeague = new LaligaLeague("La Liga");
-        UEFAChampionLeague uefaChampionLeague = new UEFAChampionLeague("UEFA Champion League");
 
         System.out.println("Tournament name: " + laligaLeague.getNameTournament());
         System.out.println();
         laligaLeague.execute();
         System.out.println();
 
-        System.out.println("Tournament name: " + uefaChampionLeague.getNameTournament());
+
+        CreateLaligaSchedule createLaligaSchedule = new CreateLaligaSchedule(laligaLeague.getLaligaTeams());
+
+        laLigaMatches = createLaligaSchedule.createLaLigaMatches();
+
+        System.out.println("La Liga Matches:");
         System.out.println();
-        uefaChampionLeague.execute();
+        createLaligaSchedule.showLaLigaMatches();
         System.out.println();
 
-        CreateFootballMatchSchedule matchSchedule = new CreateFootballMatchSchedule(uefaChampionLeague.getUefaChampionLeagueTeams()
-        );
 
-        uclMatches = matchSchedule.createUCLMatches();
+        System.out.println("Available Match Dates: " + createLaligaSchedule.generateAvailableDates(createLaligaSchedule.getOccupiedLaligaMatchesDates(laLigaMatches)));
+    }
 
-        System.out.println("UEFA Matches:");
-        matchSchedule.showUefaMatches();
-
-        System.out.println("Available Match Dates: " + matchSchedule.generateAvailableDates(matchSchedule.getOccupiedLaligaMatchesDates(uclMatches)));
+    public static void main(String[] args) {
+        CreateLaligaSchedule createLaligaSchedule = new CreateLaligaSchedule();
+        createLaligaSchedule.execute();
     }
 }

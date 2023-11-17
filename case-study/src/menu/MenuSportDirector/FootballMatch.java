@@ -3,6 +3,7 @@ package menu.MenuSportDirector;
 import menu.Command;
 import service.Tournament.Team;
 
+import java.time.LocalDate;
 import java.util.Random;
 
 public class FootballMatch implements Command {
@@ -10,15 +11,17 @@ public class FootballMatch implements Command {
     private Team awayTeam;
     private int homeScore;
     private int awayScore;
+    private LocalDate matchDate;
 
     public FootballMatch() {
     }
 
-    public FootballMatch(Team homeTeam, Team awayTeam) {
+    public FootballMatch(Team homeTeam, Team awayTeam, LocalDate matchDate) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
         this.homeScore = 0;
         this.awayScore = 0;
+        this.matchDate = matchDate;
     }
 
     public Team getHomeTeam() {
@@ -53,6 +56,14 @@ public class FootballMatch implements Command {
         this.awayScore = awayScore;
     }
 
+    public LocalDate getMatchDate() {
+        return matchDate;
+    }
+
+    public void setMatchDate(LocalDate matchDate) {
+        this.matchDate = matchDate;
+    }
+
     public void simulateResult() {
         Random random = new Random();
         homeScore = random.nextInt(6);
@@ -82,6 +93,7 @@ public class FootballMatch implements Command {
                 ", awayTeam=" + awayTeam +
                 ", homeScore=" + homeScore +
                 ", awayScore=" + awayScore +
+                ", matchDay =" + matchDate +
                 '}';
     }
 }

@@ -8,7 +8,7 @@ public class SingletonChairman {
     private static SingletonChairman instance;
 
     private SingletonChairman(){
-        chairman = new Chairman(UserType.CHAIRMAN, "Joan", "567", "Joan Laporta i Estruch",61, "Male", "Lawyer" );
+        chairman = SingletonChairmanManagement.getInstance().getChairman();
     }
 
     public static SingletonChairman getInstance(){

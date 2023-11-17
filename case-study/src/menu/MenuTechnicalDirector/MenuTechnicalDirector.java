@@ -5,6 +5,7 @@ import menu.MenuItem;
 import menu.MenuMain;
 import menu.Navigator;
 import service.User.SingletonTechnicalDirector;
+import service.chainLogin.ExitCommand;
 
 import java.util.Scanner;
 
@@ -13,10 +14,14 @@ public class MenuTechnicalDirector implements Navigator {
     private final Scanner SCANNER = new Scanner(System.in);
     private void menuTechnicalDirector(){
         Menu menuTechnicalDirector = new MenuMain();
-        menuTechnicalDirector.addMenuItem(new MenuItem("Young Player", new YoungPlayer()));
-        menuTechnicalDirector.addMenuItem(new MenuItem("Search Talent Player", new SearchTalentPlayer()));
+//        menuTechnicalDirector.addMenuItem(new MenuItem("Young Player", ));
+//        menuTechnicalDirector.addMenuItem(new MenuItem("Search Talent Player", new SearchTalentPlayer()));
+        menuTechnicalDirector.addMenuItem(new MenuItem("Create new young player", new CommandAddNewYoungPlayer()));
+        menuTechnicalDirector.addMenuItem(new MenuItem("Display all young player", new CommandDisplayAllYoungPlayer()));
+        menuTechnicalDirector.addMenuItem(new MenuItem("Change and remove young player", new CommandSelectCurrentYoungPlayer()));
+        menuTechnicalDirector.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
-        System.out.println("Welcome " + SingletonTechnicalDirector.getInstance().getTechnicalDirectorName());
+        System.out.println("Welcome Sport Director " + SingletonTechnicalDirector.getInstance().getTechnicalDirectorName());
         do {
             menuTechnicalDirector.display();
             choice = SCANNER.nextInt();
