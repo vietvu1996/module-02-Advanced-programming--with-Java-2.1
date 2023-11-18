@@ -16,10 +16,10 @@ public class MenuAssistantCoach implements Navigator {
     private void menuAssistantCoach() {
         Menu menuAssistantCoach = new MenuMain();
         menuAssistantCoach.addMenuItem(new MenuItem("Tactical", new Tactical()));
-        menuAssistantCoach.addMenuItem(new MenuItem("Performance of players", new EvaluatePerformance()));
+        menuAssistantCoach.addMenuItem(new MenuItem("Performance of players", new EvaluatePlayerPerformance()));
         menuAssistantCoach.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
-        System.out.println("Welcome " + SingletonCurrentAssistantCoach.getInstance().getAssistantName());
+        System.out.println("Welcome Assistant " + SingletonCurrentAssistantCoach.getInstance().getAssistantName());
         do {
             menuAssistantCoach.display();
             choice = SCANNER.nextInt();

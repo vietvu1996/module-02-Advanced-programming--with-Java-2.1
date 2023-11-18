@@ -2,6 +2,7 @@ package entity;
 
 public class Player extends User {
     private UserType userType;
+    private int Id;
     private String fullName;
     private String position;
     private String DateOfBirth;
@@ -14,6 +15,22 @@ public class Player extends User {
     private int yearsContract;
     private double salary;
 
+    public Player(String fullName, String position) {
+        this.fullName = fullName;
+        this.position = position;
+    }
+
+    public Player(int id, String fullName, String position, String dateOfBirth, String nationality, double height, double weight, boolean isLamasia, int tshirtNumber) {
+        Id = id;
+        this.fullName = fullName;
+        this.position = position;
+        DateOfBirth = dateOfBirth;
+        this.nationality = nationality;
+        this.height = height;
+        this.weight = weight;
+        this.isLamasia = isLamasia;
+        TshirtNumber = tshirtNumber;
+    }
 
     public Player(UserType userType, String username, String password, String fullName, String position, String dateOfBirth, String gender, String nationality, double height, double weight, boolean isLamasia, int tshirtNumber, int yearsContract, double salary) {
         super(username, password);
@@ -117,5 +134,27 @@ public class Player extends User {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                ", fullName='" + fullName + '\'' +
+                ", position='" + position + '\'' +
+                ", DateOfBirth='" + DateOfBirth + '\'' +
+                ", nationality='" + nationality + '\'' +
+                ", height=" + height +
+                ", weight=" + weight +
+                ", isLamasia=" + isLamasia +
+                ", TshirtNumber=" + TshirtNumber +
+                '}';
     }
 }

@@ -18,7 +18,8 @@ public class MenuTechnicalDirector implements Navigator {
 //        menuTechnicalDirector.addMenuItem(new MenuItem("Search Talent Player", new SearchTalentPlayer()));
         menuTechnicalDirector.addMenuItem(new MenuItem("Create new young player", new CommandAddNewYoungPlayer()));
         menuTechnicalDirector.addMenuItem(new MenuItem("Display all young player", new CommandDisplayAllYoungPlayer()));
-        menuTechnicalDirector.addMenuItem(new MenuItem("Change and remove young player", new CommandSelectCurrentYoungPlayer()));
+        menuTechnicalDirector.addMenuItem(new MenuItem("Change young player", new CommandChangeCurrentYoungPlayerName()));
+        menuTechnicalDirector.addMenuItem(new MenuItem("Remove young player", new CommandRemoveCurrentYoungPlayer()));
         menuTechnicalDirector.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
         System.out.println("Welcome Sport Director " + SingletonTechnicalDirector.getInstance().getTechnicalDirectorName());

@@ -15,16 +15,16 @@
   },
   {
     "id": 3,
-    "name": "abc",
-    "age": 20,
-    "position": "",
-    "performance": "good"
+    "name": "Marc Guiu",
+    "age": 18,
+    "position": "CM",
+    "performance": "Good"
   },
   {
     "id": 4,
-    "name": "Viet",
-    "age": 27,
-    "position": "",
-    "performance": "CM"
+    "name": "Hieu",
+    "age": 20,
+    "position": "CAM",
+    "performance": "Normal"
   }
 ]

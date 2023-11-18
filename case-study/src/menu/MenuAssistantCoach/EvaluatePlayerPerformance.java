@@ -1,4 +1,4 @@
-package menu.MenuCoach;
+package menu.MenuAssistantCoach;
 
 import menu.Command;
 

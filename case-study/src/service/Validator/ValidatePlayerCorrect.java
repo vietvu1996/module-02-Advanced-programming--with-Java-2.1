@@ -12,7 +12,7 @@ public class ValidatePlayerCorrect implements Validator{
     private final String password;
 
     public ValidatePlayerCorrect(String username, String password) {
-        this.players = SingletonPlayerListManagement.getInstance().getPlayer();
+        this.players = SingletonPlayerListManagement.getInstance().getPlayers();
         this.username = username;
         this.password = password;
     }

@@ -14,6 +14,7 @@ public class CommandChangeCurrentYoungPlayerName extends Subject implements Comm
         int id = SCANNER.nextInt();
         //set current young player
         CurrentYoungPlayer.getInstance().setCurrentYoungPlayer(id);
+        SCANNER.nextLine();
         System.out.println("Input young player new name");
         String newName = SCANNER.nextLine();
         //update
