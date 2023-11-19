@@ -11,4 +11,5 @@ public interface Constants {
     String CHAMPIONSHIP_FILE_PATH = "data/championship.json";
     String STADIUM_FILE_PATH = "data/stadium.json";
     String FOOTBALLCLUB_FILE_PATH = "data/footballclub.json";
+    String TRAINING_SESSION_PATH = "data/trainingsession.json";
 }

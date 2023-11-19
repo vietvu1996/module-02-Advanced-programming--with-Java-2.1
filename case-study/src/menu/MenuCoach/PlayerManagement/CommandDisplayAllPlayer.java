@@ -1,4 +1,4 @@
-package menu.MenuCoach;
+package menu.MenuCoach.PlayerManagement;
 
 import entity.Player;
 import menu.Command;

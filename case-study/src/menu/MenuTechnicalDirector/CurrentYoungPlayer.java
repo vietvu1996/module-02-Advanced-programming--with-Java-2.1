@@ -3,9 +3,7 @@ package menu.MenuTechnicalDirector;
 public class CurrentYoungPlayer {
     private YoungPlayer currentYoungPlayer;
     private static CurrentYoungPlayer instance;
-    private CurrentYoungPlayer() {
-
-    }
+    private CurrentYoungPlayer() {}
     public static CurrentYoungPlayer getInstance() {
         if(instance == null) {
             instance = new CurrentYoungPlayer();

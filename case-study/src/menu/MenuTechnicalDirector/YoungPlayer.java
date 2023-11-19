@@ -8,7 +8,6 @@ public class YoungPlayer{
     private String performance;
 
 
-
 //    public YoungPlayer(){}
 
     public YoungPlayer(int id, String name, int age, String position, String performance) {

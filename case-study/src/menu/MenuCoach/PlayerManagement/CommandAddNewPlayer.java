@@ -1,20 +1,20 @@
-package menu.MenuCoach;
+package menu.MenuCoach.PlayerManagement;
 
+import entity.Player;
 import menu.Command;
+import menu.MenuTechnicalDirector.GenerateId;
 import service.ChangeandUpdate.Observer;
 import service.ChangeandUpdate.Subject;
-import service.User.SingletonCurrentPlayer;
 import service.User.SingletonPlayerListManagement;
 
 import java.util.Scanner;
 
-public class CommandChangeCurrentPlayer extends Subject implements Command {
+public class CommandAddNewPlayer extends Subject implements Command {
     private final Scanner SCANNER = new Scanner(System.in);
     @Override
     public void execute() {
-        System.out.println("Input player ID");
-        int id = SCANNER.nextInt();
-        SingletonCurrentPlayer.getInstance().setCurrentPlayer(id);
+        GenerateId generateId = SingletonPlayerListManagement.getInstance();
+        int newId = generateId.generateId();
         System.out.println("Input player name ");
         String newName = SCANNER.nextLine();
         System.out.println("Input player dateOfBirth");
@@ -33,15 +33,9 @@ public class CommandChangeCurrentPlayer extends Subject implements Command {
         System.out.println("Input player T-shirt Number");
         int newTShirtNumber = SCANNER.nextInt();
 
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setFullName(newName);
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setDateOfBirth(newDateOfBirth);
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setPosition(newPosition);
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setNationality(newNationality);
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setHeight(newHeight);
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setWeight(newWeight);
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setLamasia(isLaMasia);
-        SingletonCurrentPlayer.getInstance().getCurrentPlayer().setTshirtNumber(newTShirtNumber);
+        Player newPlayer = new Player(newId, newName, newDateOfBirth, newPosition, newNationality, newHeight, newWeight, isLaMasia, newTShirtNumber);
 
+        SingletonPlayerListManagement.getInstance().getPlayers().add(newPlayer);
         Observer observer = SingletonPlayerListManagement.getInstance();
         addObserver(observer);
         notifyObserver();

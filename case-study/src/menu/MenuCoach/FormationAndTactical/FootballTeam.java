@@ -1,4 +1,4 @@
-package menu.MenuCoach;
+package menu.MenuCoach.FormationAndTactical;
 
 public class FootballTeam {
     private final FootballFormation formation;

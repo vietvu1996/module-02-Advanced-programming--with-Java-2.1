@@ -13,8 +13,8 @@ import java.util.List;
 public class LaMasiaAcademySingleton implements Observer, GenerateId {
     private List<YoungPlayer> youngPlayers;
     private static LaMasiaAcademySingleton instance;
-    private MyFileHandler fileHandler;
-    private Type YOUNG_PLAYER_TYPE = new TypeToken<ArrayList<YoungPlayer>>() {
+    private final MyFileHandler fileHandler;
+    private final Type YOUNG_PLAYER_TYPE = new TypeToken<ArrayList<YoungPlayer>>() {
     }.getType();
 
     private LaMasiaAcademySingleton() {
@@ -35,11 +35,6 @@ public class LaMasiaAcademySingleton implements Observer, GenerateId {
     public List<YoungPlayer> getYoungPlayers() {
         return youngPlayers;
     }
-
-    public void setYoungPlayers(List<YoungPlayer> youngPlayers) {
-        this.youngPlayers = youngPlayers;
-    }
-
 
     @Override
     public void update() {
@@ -62,16 +57,4 @@ public class LaMasiaAcademySingleton implements Observer, GenerateId {
             return 1;
         }
     }
-    //vao test
-
-//    public void YoungTalentedInLaMasia(){
-//        List<YoungPlayer> youngPlayers = new ArrayList<>();
-//        youngPlayers.add(new YoungPlayer(1,"Pablo Gavi", 18, "CM", "Excellent"));
-//        youngPlayers.add(new YoungPlayer(2, "Lamine Yamal", 16, "RW", "Good"));
-//        youngPlayers.add(new YoungPlayer(3, "Marc Guiu", 18, "CM", "Good"));
-//        youngPlayers.add(new YoungPlayer(4,"Fermin López", 20, "CAM", "Normal"));
-//        youngPlayers.add(new YoungPlayer(5,"Pedri Gonzalez", 19, "CM", "Excellent"));
-//    }
-
-
 }

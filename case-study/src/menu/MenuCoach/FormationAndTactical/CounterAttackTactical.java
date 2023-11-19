@@ -1,4 +1,4 @@
-package menu.MenuCoach;
+package menu.MenuCoach.FormationAndTactical;
 
 public class CounterAttackTactical implements Strategy{
     @Override

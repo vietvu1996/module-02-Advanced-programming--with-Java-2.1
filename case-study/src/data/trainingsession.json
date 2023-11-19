@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nameOfExercise": "Push up Exercise",
+    "levelOfDifficult": "Easy"
+  },
+  {
+    "id": 2,
+    "nameOfExercise": "Push up Exercise",
+    "levelOfDifficult": "Medium"
+  },
+  {
+    "id": 3,
+    "nameOfExercise": "Running Exercise",
+    "levelOfDifficult": "Easy"
+  },
+  {
+    "id": 4,
+    "nameOfExercise": "Running Exercise",
+    "levelOfDifficult": "Medium"
+  },
+  {
+    "id": 5,
+    "nameOfExercise": "Shooting Exercise",
+    "levelOfDifficult": "easy"
+  },
+  {
+    "id": 6,
+    "nameOfExercise": "Passing Exercise",
+    "levelOfDifficult": "Hard"
+  },
+  {
+    "id": 7,
+    "nameOfExercise": "Moving Exercise",
+    "levelOfDifficult": "Medium"
+  },
+  {
+    "id": 8,
+    "nameOfExercise": "Dribbling",
+    "levelOfDifficult": "Hard"
+  },
+  {
+    "id": 9,
+    "nameOfExercise": "Running",
+    "levelOfDifficult": "Easy"
+  }
+]

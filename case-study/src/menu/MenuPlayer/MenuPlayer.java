@@ -23,7 +23,7 @@ public class MenuPlayer implements Navigator {
 
     private void menuPlayer() {
         Menu menuPlayer = new MenuMain();
-        menuPlayer.addMenuItem(new MenuItem("Training Session", new TrainingSession()));
+        menuPlayer.addMenuItem(new MenuItem("Training Session", new FollowTrainingSession()));
         menuPlayer.addMenuItem(new MenuItem("Club Regulations", new ClubRegulations()));
         menuPlayer.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;

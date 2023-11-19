@@ -1,4 +1,4 @@
-package menu.MenuCoach;
+package menu.MenuCoach.FormationAndTactical;
 
 import entity.Player;
 import menu.Command;
