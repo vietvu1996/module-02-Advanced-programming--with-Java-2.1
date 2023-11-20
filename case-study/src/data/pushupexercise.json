@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nameOfExercise": "Push Up",
+    "levelOfDifficult": "Easy",
+    "times": 5
+  },
+  {
+    "id": 2,
+    "nameOfExercise": "Push Up",
+    "levelOfDifficult": "Easy",
+    "times": 10
+  },
+  {
+    "id": 3,
+    "nameOfExercise": "Push Up",
+    "levelOfDifficult": "Medium",
+    "times": 10
+  },
+  {
+    "id": 4,
+    "nameOfExercise": "Push Up",
+    "levelOfDifficult": "Medium",
+    "times": 15
+  },
+  {
+    "id": 5,
+    "nameOfExercise": "Push Up",
+    "levelOfDifficult": "Hard",
+    "times": 20
+  }
+]

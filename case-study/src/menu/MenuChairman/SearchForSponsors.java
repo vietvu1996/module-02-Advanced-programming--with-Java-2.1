@@ -1,6 +1,5 @@
 package menu.MenuChairman;
 
-import entity.Finance;
 import menu.Command;
 
 import java.util.ArrayList;

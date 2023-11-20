@@ -2,6 +2,7 @@ package menu.MenuTechnicalDirector;
 
 public class CurrentYoungPlayer {
     private YoungPlayer currentYoungPlayer;
+
     private static CurrentYoungPlayer instance;
     private CurrentYoungPlayer() {}
     public static CurrentYoungPlayer getInstance() {

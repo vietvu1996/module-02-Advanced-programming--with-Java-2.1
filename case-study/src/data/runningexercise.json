@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nameOfExercise": "Running",
+    "levelOfDifficult": "Easy",
+    "laps": 5
+  },
+  {
+    "id": 2,
+    "nameOfExercise": "Running",
+    "levelOfDifficult": "Hard",
+    "laps": 40
+  },
+  {
+    "id": 3,
+    "nameOfExercise": "Running",
+    "levelOfDifficult": "Medium",
+    "laps": 10
+  },
+  {
+    "id": 4,
+    "nameOfExercise": "Running",
+    "levelOfDifficult": "Medium",
+    "laps": 15
+  },
+  {
+    "id": 5,
+    "nameOfExercise": "Running",
+    "levelOfDifficult": "Hard",
+    "laps": 20
+  }
+]

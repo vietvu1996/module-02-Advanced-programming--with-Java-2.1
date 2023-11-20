@@ -1,10 +1,9 @@
 package menu.MenuCoach;
 
-public class MovingExercise extends TrainingSession{
+public class MovingExercise{
     private String frequency;
 
     public MovingExercise(int id, String nameOfExercise, String levelOfDifficult, String frequency) {
-        super(id, nameOfExercise, levelOfDifficult);
         this.frequency = frequency;
     }
 

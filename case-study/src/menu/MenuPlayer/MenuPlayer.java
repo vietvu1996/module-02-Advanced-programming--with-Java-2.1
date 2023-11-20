@@ -1,6 +1,7 @@
 package menu.MenuPlayer;
 
 import menu.Menu;
+import menu.MenuCoach.FormationAndTactical.MenuTactical;
 import menu.MenuItem;
 import menu.MenuMain;
 import menu.Navigator;
@@ -12,8 +13,6 @@ import java.util.Scanner;
 public class MenuPlayer implements Navigator {
     private static MenuPlayer instance;
     private final Scanner SCANNER = new Scanner(System.in);
-
-
     public static MenuPlayer getInstance() {
         if(instance == null){
             instance = new MenuPlayer();
@@ -23,7 +22,7 @@ public class MenuPlayer implements Navigator {
 
     private void menuPlayer() {
         Menu menuPlayer = new MenuMain();
-        menuPlayer.addMenuItem(new MenuItem("Training Session", new FollowTrainingSession()));
+        menuPlayer.addMenuItem(new MenuItem("View formation and Strategy", new MenuTactical()));
         menuPlayer.addMenuItem(new MenuItem("Club Regulations", new ClubRegulations()));
         menuPlayer.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;

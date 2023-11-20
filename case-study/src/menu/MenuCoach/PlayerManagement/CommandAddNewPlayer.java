@@ -19,8 +19,8 @@ public class CommandAddNewPlayer extends Subject implements Command {
         String newName = SCANNER.nextLine();
         System.out.println("Input player dateOfBirth");
         String newDateOfBirth = SCANNER.nextLine();
-        SCANNER.nextLine();
-        System.out.println("Input young player position");
+//        SCANNER.nextLine();
+        System.out.println("Input player position");
         String newPosition = SCANNER.nextLine();
         System.out.println("Input player nationality");
         String newNationality = SCANNER.nextLine();

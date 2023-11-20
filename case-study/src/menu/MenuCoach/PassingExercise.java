@@ -1,10 +1,9 @@
 package menu.MenuCoach;
 
-public class PassingExercise extends TrainingSession{
+public class PassingExercise{
     private double accuracy;
 
     public PassingExercise(int id, String nameOfExercise, String levelOfDifficult, double accuracy) {
-        super(id, nameOfExercise, levelOfDifficult);
         this.accuracy = accuracy;
     }
 

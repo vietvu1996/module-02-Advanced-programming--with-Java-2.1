@@ -1,4 +1,4 @@
-package entity;
+package menu.MenuChairman;
 
 public class Finance {
     private double budget;

@@ -2,6 +2,7 @@ package menu.MenuCoach;
 
 import menu.Menu;
 import menu.MenuCoach.FormationAndTactical.MenuTactical;
+import menu.MenuCoach.MenuExercise.MenuExercise;
 import menu.MenuCoach.PlayerManagement.MenuPlayerManagement;
 import menu.MenuItem;
 import menu.MenuMain;
@@ -18,7 +19,7 @@ public class MenuCoach implements Navigator {
         Menu menuCoach = new MenuMain();
         menuCoach.addMenuItem(new MenuItem("Build Tactical", new MenuTactical()));
         menuCoach.addMenuItem(new MenuItem("Player Management", new MenuPlayerManagement()));
-        menuCoach.addMenuItem(new MenuItem("Add exercise", new CommandAddExercise()));
+        menuCoach.addMenuItem(new MenuItem("About exercise", new MenuExercise()));
         menuCoach.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
         System.out.println("Welcome Coach " + SingletonCurrentCoach.getInstance().getCoachName());

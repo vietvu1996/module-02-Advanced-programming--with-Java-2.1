@@ -1,10 +1,9 @@
 package menu.MenuCoach;
 
-public class DribblingExercise extends TrainingSession{
+public class DribblingExercise{
     private double successRate;
 
     public DribblingExercise(int id, String nameOfExercise, String levelOfDifficult, double successRate) {
-        super(id, nameOfExercise, levelOfDifficult);
         this.successRate = successRate;
     }
 

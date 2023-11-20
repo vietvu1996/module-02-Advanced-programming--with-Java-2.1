@@ -1,14 +1,24 @@
-package menu.MenuCoach;
+package menu.MenuCoach.MenuExercise;
 
-public class TrainingSession {
+public class PushUpExercise{
     private int id;
     private String nameOfExercise;
     private String levelOfDifficult;
+    private int times;
 
-    public TrainingSession(int id, String nameOfExercise, String levelOfDifficult) {
+    public PushUpExercise(int id, String nameOfExercise, String levelOfDifficult, int times) {
         this.id = id;
         this.nameOfExercise = nameOfExercise;
         this.levelOfDifficult = levelOfDifficult;
+        this.times = times;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNameOfExercise() {
@@ -27,20 +37,21 @@ public class TrainingSession {
         this.levelOfDifficult = levelOfDifficult;
     }
 
-    public int getId() {
-        return id;
+    public int getTimes() {
+        return times;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTimes(int times) {
+        this.times = times;
     }
 
     @Override
     public String toString() {
-        return "TrainingSession{" +
+        return "PushUpExercise{" +
                 "id=" + id +
                 ", nameOfExercise='" + nameOfExercise + '\'' +
                 ", levelOfDifficult='" + levelOfDifficult + '\'' +
+                ", times=" + times +
                 '}';
     }
 }

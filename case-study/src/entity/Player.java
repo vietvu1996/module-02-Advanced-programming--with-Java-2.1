@@ -32,10 +32,11 @@ public class Player extends User {
         TshirtNumber = tshirtNumber;
     }
 
-    public Player(UserType userType, String username, String password, String fullName, String position, String dateOfBirth, String gender, String nationality, double height, double weight, boolean isLamasia, int tshirtNumber, int yearsContract, double salary) {
+    public Player(UserType userType, String username, String password, int id, String fullName, String position, String dateOfBirth, String gender, String nationality, double height, double weight, boolean isLamasia, int tshirtNumber, int yearsContract, double salary) {
         super(username, password);
         this.userType = userType;
         this.fullName = fullName;
+        Id = id;
         this.position = position;
         DateOfBirth = dateOfBirth;
         this.gender = gender;
@@ -147,6 +148,7 @@ public class Player extends User {
     @Override
     public String toString() {
         return "Player{" +
+                "Id=" + Id +
                 ", fullName='" + fullName + '\'' +
                 ", position='" + position + '\'' +
                 ", DateOfBirth='" + DateOfBirth + '\'' +

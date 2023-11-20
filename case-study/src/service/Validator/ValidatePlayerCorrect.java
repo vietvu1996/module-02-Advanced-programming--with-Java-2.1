@@ -19,8 +19,7 @@ public class ValidatePlayerCorrect implements Validator{
 
     @Override
     public boolean isCheck() {
-        for (User user: players
-             ) {
+        for (User user: players) {
             if(user.getUsername().equals(username) && user.getPassword().equals(password)) {
                 return true;
             }
