@@ -1,4 +1,4 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuPushUpExercise;
 
 import constant.Constants;
 import menu.Command;
@@ -15,7 +15,6 @@ public class CommandRemovePushUpExercise extends Subject implements Command {
     public void execute() {
         System.out.println("Input exercise id");
         int id = SCANNER.nextInt();
-//set current young player
         CurrentPushUpExercise.getInstance().setCurrentPushUpExercise(id);
 // Check if the player exists in the list
         boolean exerciseExists = PushUpSingleton.getInstance().getPushUpExerciseList().stream().anyMatch(exercise -> exercise.getId() == id);

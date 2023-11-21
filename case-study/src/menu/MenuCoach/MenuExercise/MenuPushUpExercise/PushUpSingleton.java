@@ -1,4 +1,4 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuPushUpExercise;
 
 import com.google.gson.reflect.TypeToken;
 import constant.Constants;

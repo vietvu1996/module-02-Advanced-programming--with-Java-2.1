@@ -1,4 +1,4 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuRunningExercise;
 
 public class CurrentRunningExercise {
     private RunningExercise currentRunningExercise;

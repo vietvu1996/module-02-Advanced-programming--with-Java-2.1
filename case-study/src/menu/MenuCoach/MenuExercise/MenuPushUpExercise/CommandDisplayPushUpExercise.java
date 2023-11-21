@@ -1,7 +1,6 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuPushUpExercise;
 
 import menu.Command;
-import service.ChangeandUpdate.Subject;
 
 public class CommandDisplayPushUpExercise implements Command {
 

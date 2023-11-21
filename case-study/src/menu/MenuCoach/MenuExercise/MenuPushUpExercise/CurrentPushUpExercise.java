@@ -1,4 +1,4 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuPushUpExercise;
 
 public class CurrentPushUpExercise {
     private PushUpExercise currentPushUpExercise;

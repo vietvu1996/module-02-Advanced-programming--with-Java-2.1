@@ -43,6 +43,16 @@ public class LaligaLeague implements Command {
         addTeam(team9);
         addTeam(team10);
 
+        team1.setScore(11);
+        team2.setScore(12);
+        team3.setScore(20);
+        team4.setScore(13);
+        team5.setScore(11);
+        team6.setScore(16);
+        team7.setScore(17);
+        team8.setScore(18);
+        team9.setScore(17);
+        team10.setScore(11);
     }
 
 
@@ -61,17 +71,19 @@ public class LaligaLeague implements Command {
     }
 
     public boolean checkIfWinning() {
+        String winningTeam = null;
+        int highestScore = 0;
         for (Map.Entry<String, Team> entry : laligaTeams.entrySet()) {
-            String winningTeam = null;
-            int highestScore = 0;
-            for (String team : laligaTeams.keySet()) {
-                int score = entry.getValue().getScore();
-                if (score > highestScore) {
-                    highestScore = score;
-                    winningTeam = team;
-                }
+            int score = entry.getValue().getScore();
+            if (score > highestScore) {
+                highestScore = score;
+                winningTeam = entry.getKey();
             }
-            if (winningTeam != null && !winningTeam.equals(entry.getKey())) {
+        }
+        System.out.println();
+        System.out.println("The champion is: " + winningTeam + " with score: " + highestScore);
+        for (String team : laligaTeams.keySet()) {
+            if (!team.equals(winningTeam)) {
                 return false;
             }
         }
@@ -82,6 +94,7 @@ public class LaligaLeague implements Command {
     public void execute() {
         laligaLeague();
         displayTeams();
+        checkIfWinning();
     }
 
     public static void main(String[] args) {

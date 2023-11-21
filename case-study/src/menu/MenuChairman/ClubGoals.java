@@ -12,6 +12,22 @@ public class ClubGoals implements Command {
         this.uefaChampionLeague = uefaChampionLeague;
     }
 
+    public LaligaLeague getLaligaLeague() {
+        return laligaLeague;
+    }
+
+    public void setLaligaLeague(LaligaLeague laligaLeague) {
+        this.laligaLeague = laligaLeague;
+    }
+
+    public UEFAChampionLeague getUefaChampionLeague() {
+        return uefaChampionLeague;
+    }
+
+    public void setUefaChampionLeague(UEFAChampionLeague uefaChampionLeague) {
+        this.uefaChampionLeague = uefaChampionLeague;
+    }
+
     public ClubGoals() {
     }
 

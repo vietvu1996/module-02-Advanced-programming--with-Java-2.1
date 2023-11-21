@@ -2,7 +2,8 @@ package menu.MenuPlayer;
 
 import menu.Menu;
 import menu.MenuCoach.FormationAndTactical.MenuTactical;
-import menu.MenuCoach.MenuExercise.MenuExercise;
+import menu.MenuCoach.MenuExercise.MenuPushUpExercise.CommandDisplayPushUpExercise;
+import menu.MenuCoach.MenuExercise.MenuRunningExercise.CommandDisplayRunningExercise;
 import menu.MenuItem;
 import menu.MenuMain;
 import menu.Navigator;
@@ -24,7 +25,8 @@ public class MenuPlayer implements Navigator {
     private void menuPlayer() {
         Menu menuPlayer = new MenuMain();
         menuPlayer.addMenuItem(new MenuItem("View formation and Strategy", new MenuTactical()));
-        menuPlayer.addMenuItem(new MenuItem("View Exercise", new MenuExercise()));
+        menuPlayer.addMenuItem(new MenuItem("View Running Exercise", new CommandDisplayRunningExercise()));
+        menuPlayer.addMenuItem(new MenuItem("View Push Up Exercise", new CommandDisplayPushUpExercise()));
         menuPlayer.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
         System.out.println("Welcome Player " + SingletonCurrentPlayer.getInstance().getCurrentPlayerName());

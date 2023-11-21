@@ -6,6 +6,7 @@ import menu.MenuMain;
 import menu.Navigator;
 import service.chainLogin.ExitCommand;
 import service.User.SingletonSportDirector;
+
 import java.util.Scanner;
 
 public class MenuSportDirector implements Navigator {
@@ -14,8 +15,8 @@ public class MenuSportDirector implements Navigator {
 
     private void menuSportDirector() {
         Menu menuSportDirector = new MenuMain();
-        menuSportDirector.addMenuItem(new MenuItem("Football Match Schedule", new CreateLaligaSchedule()));
-        menuSportDirector.addMenuItem(new MenuItem("Uefa Champion League", new CreateUefaChampionLeagueSchedule()));
+        menuSportDirector.addMenuItem(new MenuItem("La Liga Schedule", new CreateLaligaSchedule()));
+        menuSportDirector.addMenuItem(new MenuItem("Uefa Champion League Schedule", new CreateUefaChampionLeagueSchedule()));
         menuSportDirector.addMenuItem(new MenuItem("Change Schedule, Reschedule", new ReSchedule()));
         menuSportDirector.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;

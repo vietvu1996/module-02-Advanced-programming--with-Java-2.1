@@ -1,24 +1,24 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuPushUpExercise;
 
-public class RunningExercise{
+public class PushUpExercise{
     private int id;
     private String nameOfExercise;
     private String levelOfDifficult;
-    private int laps;
+    private int times;
 
-    public RunningExercise(int id, String nameOfExercise, String levelOfDifficult, int laps) {
+    public PushUpExercise(int id, String nameOfExercise, String levelOfDifficult, int times) {
         this.id = id;
         this.nameOfExercise = nameOfExercise;
         this.levelOfDifficult = levelOfDifficult;
-        this.laps = laps;
+        this.times = times;
     }
 
-    public int getLaps() {
-        return laps;
+    public int getId() {
+        return id;
     }
 
-    public void setLaps(int laps) {
-        this.laps = laps;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNameOfExercise() {
@@ -37,21 +37,21 @@ public class RunningExercise{
         this.levelOfDifficult = levelOfDifficult;
     }
 
-    public int getId() {
-        return id;
+    public int getTimes() {
+        return times;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTimes(int times) {
+        this.times = times;
     }
 
     @Override
     public String toString() {
-        return "RunningExercise{" +
+        return "PushUpExercise{" +
                 "id=" + id +
                 ", nameOfExercise='" + nameOfExercise + '\'' +
                 ", levelOfDifficult='" + levelOfDifficult + '\'' +
-                ", laps=" + laps +
+                ", times=" + times +
                 '}';
     }
 }

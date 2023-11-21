@@ -41,14 +41,6 @@ public class CreateLaligaSchedule implements Command {
         return occupiedDates;
     }
 
-    public List<LocalDate> getOccupiedUefaMatchesDates(List<FootballMatch> uclMatches) {
-        List<LocalDate> occupiedDates = new ArrayList<>();
-        for (FootballMatch match : uclMatches) {
-            occupiedDates.add(match.getMatchDate());
-        }
-        return occupiedDates;
-    }
-
     public LocalDate getRandomDateFromList(List<LocalDate> dates) {
         Random random = new Random();
         int randomIndex = random.nextInt(dates.size());

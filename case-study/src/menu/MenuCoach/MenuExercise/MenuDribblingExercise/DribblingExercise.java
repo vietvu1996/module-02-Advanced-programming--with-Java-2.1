@@ -1,16 +1,16 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuDribblingExercise;
 
-public class PushUpExercise{
+public class DribblingExercise{
     private int id;
     private String nameOfExercise;
     private String levelOfDifficult;
-    private int times;
+    private double successRate;
 
-    public PushUpExercise(int id, String nameOfExercise, String levelOfDifficult, int times) {
+    public DribblingExercise(int id, String nameOfExercise, String levelOfDifficult, double successRate) {
         this.id = id;
         this.nameOfExercise = nameOfExercise;
         this.levelOfDifficult = levelOfDifficult;
-        this.times = times;
+        this.successRate = successRate;
     }
 
     public int getId() {
@@ -37,21 +37,21 @@ public class PushUpExercise{
         this.levelOfDifficult = levelOfDifficult;
     }
 
-    public int getTimes() {
-        return times;
+    public double getSuccessRate() {
+        return successRate;
     }
 
-    public void setTimes(int times) {
-        this.times = times;
+    public void setSuccessRate(double successRate) {
+        this.successRate = successRate;
     }
 
     @Override
     public String toString() {
-        return "PushUpExercise{" +
+        return "DribblingExercise{" +
                 "id=" + id +
                 ", nameOfExercise='" + nameOfExercise + '\'' +
                 ", levelOfDifficult='" + levelOfDifficult + '\'' +
-                ", times=" + times +
+                ", successRate=" + successRate +
                 '}';
     }
 }

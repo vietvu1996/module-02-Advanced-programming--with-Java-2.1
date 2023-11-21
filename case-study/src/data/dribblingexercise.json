@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nameOfExercise": "Dribbling",
+    "levelOfDifficult": "Easy",
+    "successRate": 20.0
+  },
+  {
+    "id": 2,
+    "nameOfExercise": "Dribbling",
+    "levelOfDifficult": "Easy",
+    "successRate": 30.0
+  },
+  {
+    "id": 3,
+    "nameOfExercise": "Dribbling",
+    "levelOfDifficult": "Medium",
+    "successRate": 50.0
+  },
+  {
+    "id": 4,
+    "nameOfExercise": "Dribbling",
+    "levelOfDifficult": "Hard",
+    "successRate": 80.0
+  },
+  {
+    "id": 5,
+    "nameOfExercise": "Dribbling",
+    "levelOfDifficult": "Hard",
+    "successRate": 100.0
+  },
+  {
+    "id": 6,
+    "nameOfExercise": "Dribbling",
+    "levelOfDifficult": "Medium",
+    "successRate": 90.0
+  }
+]

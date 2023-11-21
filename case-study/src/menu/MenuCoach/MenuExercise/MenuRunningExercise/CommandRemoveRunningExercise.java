@@ -1,4 +1,4 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuRunningExercise;
 
 import constant.Constants;
 import menu.Command;

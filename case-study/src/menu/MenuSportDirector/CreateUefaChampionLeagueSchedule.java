@@ -32,14 +32,6 @@ public class CreateUefaChampionLeagueSchedule implements Command {
         return availableDates;
     }
 
-    public List<LocalDate> getOccupiedLaligaMatchesDates(List<FootballMatch> laLigaMatches) {
-        List<LocalDate> occupiedDates = new ArrayList<>();
-        for (FootballMatch match : laLigaMatches) {
-            occupiedDates.add(match.getMatchDate());
-        }
-        return occupiedDates;
-    }
-
     public List<LocalDate> getOccupiedUefaMatchesDates(List<FootballMatch> uclMatches) {
         List<LocalDate> occupiedDates = new ArrayList<>();
         for (FootballMatch match : uclMatches) {
@@ -109,7 +101,6 @@ public class CreateUefaChampionLeagueSchedule implements Command {
     public void execute() {
         UEFAChampionLeague uefaChampionLeague = new UEFAChampionLeague("UEFA Champion League");
 
-
         System.out.println("Tournament name: " + uefaChampionLeague.getNameTournament());
         System.out.println();
         uefaChampionLeague.execute();
@@ -123,6 +114,6 @@ public class CreateUefaChampionLeagueSchedule implements Command {
         System.out.println("UEFA Matches:");
         matchSchedule.showUefaMatches();
 
-        System.out.println("Available Match Dates: " + matchSchedule.generateAvailableDates(matchSchedule.getOccupiedLaligaMatchesDates(uclMatches)));
+        System.out.println("Available Match Dates: " + matchSchedule.generateAvailableDates(matchSchedule.getOccupiedUefaMatchesDates(uclMatches)));
     }
 }

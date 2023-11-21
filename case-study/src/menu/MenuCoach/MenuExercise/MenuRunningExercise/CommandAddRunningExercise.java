@@ -1,4 +1,4 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuRunningExercise;
 
 import menu.Command;
 import menu.MenuTechnicalDirector.GenerateId;

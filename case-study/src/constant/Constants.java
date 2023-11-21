@@ -15,4 +15,5 @@ public interface Constants {
     String PUSHUP_EXERCISE_PATH = "data/pushupexercise.json";
     String TRANSFER_MARKET_PATH = "data/transfermarket.json";
     String FINANCE_FILE_PATH = "data/finance.json";
+    String DRIBBLING_EXERCISE_FILE_PATH = "data/dribblingexercise.json";
 }

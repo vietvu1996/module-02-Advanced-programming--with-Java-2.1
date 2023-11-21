@@ -2,6 +2,9 @@ package menu.MenuCoach.MenuExercise;
 
 import menu.Command;
 import menu.Menu;
+import menu.MenuCoach.MenuExercise.MenuDribblingExercise.MenuDribblingExercise;
+import menu.MenuCoach.MenuExercise.MenuPushUpExercise.MenuPushUpExercise;
+import menu.MenuCoach.MenuExercise.MenuRunningExercise.MenuRunningExercise;
 import menu.MenuItem;
 import menu.MenuMain;
 
@@ -14,14 +17,9 @@ public class MenuExercise implements Command{
 
     private void displayMenuExercise(){
         Menu menuExercise = new MenuMain();
-        menuExercise.addMenuItem(new MenuItem("Add new Running Exercise", new CommandAddRunningExercise()));
-        menuExercise.addMenuItem(new MenuItem("Change Running Exercise", new CommandChangeRunningExercise()));
-        menuExercise.addMenuItem(new MenuItem("Display Running Exercise", new CommandDisplayRunningExercise()));
-        menuExercise.addMenuItem(new MenuItem("Remove Running Exercise", new CommandRemoveRunningExercise()));
-        menuExercise.addMenuItem(new MenuItem("Add new Push Up Exercise", new CommandAddPushUpExercise()));
-        menuExercise.addMenuItem(new MenuItem("Change Push Up Exercise", new CommandChangePushUpExercise()));
-        menuExercise.addMenuItem(new MenuItem("Display Push Up Exercise", new CommandDisplayPushUpExercise()));
-        menuExercise.addMenuItem(new MenuItem("Remove Push Up Exercise", new CommandRemovePushUpExercise()));
+        menuExercise.addMenuItem(new MenuItem("Dribbling Exercise", new MenuDribblingExercise()));
+        menuExercise.addMenuItem(new MenuItem("Running Exercise", new MenuRunningExercise()));
+        menuExercise.addMenuItem(new MenuItem("Push up Exercise", new MenuPushUpExercise()));
         int choice;
         do {
             menuExercise.display();

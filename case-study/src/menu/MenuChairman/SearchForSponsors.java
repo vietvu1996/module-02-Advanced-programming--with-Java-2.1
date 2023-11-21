@@ -1,18 +1,15 @@
 package menu.MenuChairman;
 
-import constant.Constants;
 import menu.Command;
 import service.ChangeandUpdate.Observer;
 import service.ChangeandUpdate.Subject;
-import service.GSON.FileHandler;
-import service.GSON.JsonFileHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SearchForSponsors extends Subject implements Command {
     private List<Sponsor> sponsors;
-    private Finance finance ;
+    private Finance finance;
     private int clubRanking;
 
     public SearchForSponsors() {
@@ -31,8 +28,8 @@ public class SearchForSponsors extends Subject implements Command {
         sponsors.add((new Sponsor("Unicef", 3000000, 2)));
         sponsors.add((new Sponsor("Qatar Foundation", 2000000, 4)));
 
-        System.out.print("We have lists of Sponsors are: " );
-        for (Sponsor sponsor: sponsors) {
+        System.out.print("We have lists of Sponsors are: ");
+        for (Sponsor sponsor : sponsors) {
             System.out.print(sponsor.getName() + ", ");
         }
         System.out.println();
@@ -51,11 +48,7 @@ public class SearchForSponsors extends Subject implements Command {
             System.out.println();
             Observer financeManagement = FinancialManagement.getInstance();
             addObserver(financeManagement);
-//            double income = FinanceSingleton.getInstance().getFinance().getIncome();
             FinancialManagement.getInstance().getFinance().addIncome(sponsor.getOfferAmount());
-
-
-
             notifyObserver();
             removeObserver(financeManagement);
 
@@ -72,9 +65,5 @@ public class SearchForSponsors extends Subject implements Command {
         searchForSponsors.findSponsors();
     }
 
-    public static void main(String[] args) {
-        SearchForSponsors searchForSponsors = new SearchForSponsors();
-        searchForSponsors.execute();
-    }
 }
 

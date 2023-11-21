@@ -1,4 +1,4 @@
-package menu.MenuCoach.MenuExercise;
+package menu.MenuCoach.MenuExercise.MenuPushUpExercise;
 
 import menu.Command;
 import service.ChangeandUpdate.Observer;
@@ -12,7 +12,6 @@ public class CommandChangePushUpExercise extends Subject implements Command {
     public void execute() {
         System.out.println("Input exercise id");
         int id = SCANNER.nextInt();
-        //set current young player
         CurrentPushUpExercise.getInstance().setCurrentPushUpExercise(id);
         SCANNER.nextLine();
         System.out.println("Input exercise new level difficult");

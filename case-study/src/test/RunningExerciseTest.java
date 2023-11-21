@@ -1,7 +1,7 @@
 package test;
 
 import constant.Constants;
-import menu.MenuCoach.MenuExercise.RunningExercise;
+import menu.MenuCoach.MenuExercise.MenuRunningExercise.RunningExercise;
 import service.GSON.JsonMyFileHandler;
 import service.GSON.MyFileHandler;
 
