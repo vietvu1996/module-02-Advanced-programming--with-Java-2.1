@@ -22,7 +22,7 @@ public class MenuTechnicalDirector implements Navigator {
         menuTechnicalDirector.addMenuItem(new MenuItem("Remove young player", new CommandRemoveCurrentYoungPlayer()));
         menuTechnicalDirector.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
-        System.out.println("Welcome Sport Director " + SingletonTechnicalDirector.getInstance().getTechnicalDirectorName());
+        System.out.println("Welcome Technical Director " + SingletonTechnicalDirector.getInstance().getTechnicalDirectorName());
         do {
             menuTechnicalDirector.display();
             choice = SCANNER.nextInt();

@@ -1,6 +1,40 @@
 [
   {
     "userType": "PLAYER",
+    "Id": 1,
+    "fullName": "David Villa",
+    "position": "LW",
+    "DateOfBirth": "03/12/1981",
+    "gender": "Male",
+    "nationality": "Spain",
+    "height": 175.0,
+    "weight": 68.0,
+    "isLamasia": false,
+    "TshirtNumber": 7,
+    "yearsContract": 3,
+    "salary": 150000.0,
+    "username": "David",
+    "password": "123"
+  },
+  {
+    "userType": "PLAYER",
+    "Id": 2,
+    "fullName": "Pedro Rodriguez",
+    "position": "RW",
+    "DateOfBirth": "28/07/1987",
+    "gender": "Male",
+    "nationality": "Spain",
+    "height": 169.0,
+    "weight": 67.0,
+    "isLamasia": true,
+    "TshirtNumber": 17,
+    "yearsContract": 5,
+    "salary": 100000.0,
+    "username": "Pedro",
+    "password": "012"
+  },
+  {
+    "userType": "PLAYER",
     "Id": 3,
     "fullName": "Lionel Messi",
     "position": "CF",
@@ -151,22 +185,5 @@
     "salary": 190000.0,
     "username": "Victor",
     "password": "111"
-  },
-  {
-    "userType": "PLAYER",
-    "Id": 12,
-    "fullName": "David Villa",
-    "position": "LW",
-    "DateOfBirth": "03/12/1981",
-    "gender": "Male",
-    "nationality": "Spain",
-    "height": 175.0,
-    "weight": 68.0,
-    "isLamasia": false,
-    "TshirtNumber": 7,
-    "yearsContract": 3,
-    "salary": 150000.0,
-    "username": "David",
-    "password": "123"
   }
 ]

@@ -1,12 +1,16 @@
 package menu.MenuChairman;
 
+import constant.Constants;
 import menu.Command;
 import service.ChangeandUpdate.Observer;
+import service.ChangeandUpdate.Subject;
+import service.GSON.FileHandler;
+import service.GSON.JsonFileHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchForSponsors implements Command {
+public class SearchForSponsors extends Subject implements Command {
     private List<Sponsor> sponsors;
     private Finance finance ;
     private int clubRanking;
@@ -42,10 +46,18 @@ public class SearchForSponsors implements Command {
     }
 
     private void dealWithSponsor(Sponsor sponsor) {
-        if (finance.getBudget() < sponsor.getOfferAmount() && clubRanking <= sponsor.getConditionSponsor() && clubRanking != 0) {
+        if (finance.getBudget() < sponsor.getOfferAmount() && clubRanking == sponsor.getConditionSponsor() && clubRanking != 0) {
             System.out.println("The deal with " + sponsor.getName() + " has been made successfully.");
             System.out.println();
-            finance.addIncome(sponsor.getOfferAmount());
+            Observer financeManagement = FinancialManagement.getInstance();
+            addObserver(financeManagement);
+//            double income = FinanceSingleton.getInstance().getFinance().getIncome();
+            FinancialManagement.getInstance().getFinance().addIncome(sponsor.getOfferAmount());
+
+
+
+            notifyObserver();
+            removeObserver(financeManagement);
 
         } else {
             System.out.println("The club's budget is less than the offer amount. The deal with " + sponsor.getName() + " cannot be made.");

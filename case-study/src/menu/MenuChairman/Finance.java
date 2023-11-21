@@ -1,10 +1,6 @@
 package menu.MenuChairman;
 
-import constant.Constants;
-import service.GSON.FileHandler;
-import service.GSON.JsonFileHandler;
-
-public class Finance {
+public class Finance{
     private double budget;
     private double income;
     private double expenses;
@@ -17,8 +13,8 @@ public class Finance {
         this.budget = budget;
         this.income = income;
         this.expenses = expenses;
-        this.salaryBudget = salaryBudget;
-        this.transferBudget = transferBudget;
+        this.salaryBudget = budget * 0.5;
+        this.transferBudget = budget * 0.5;
     }
 
     public double getBudget() {
@@ -54,14 +50,14 @@ public class Finance {
     }
 
 
-    public void manageFinance(double expense){
-        if(expense <= budget){
-            budget -= expense;
-            expenses += expense;
-            System.out.println("Expense of " + expense + " Euro is approved. Remaining budget: " + budget + " Euro.");
+    public void paySalary(double salary){
+        if(salary <= salaryBudget){
+            this.salaryBudget -= salary;
+            this.expenses += salary;
+            System.out.println("Salary " + salary + " Euro of player is paid. Remaining salary budget: " + salaryBudget + " Euro.");
         }
         else {
-            System.out.println("Expense of " + expense + " Euro is not approved due to insufficient budget.");
+            System.out.println("Salary " + salary + " Euro of player cannot paid. ");
         }
     }
 
@@ -71,16 +67,22 @@ public class Finance {
         System.out.println("Added income of " + income + " Euro. Current budget: " + budget + " Euro.");
     }
 
+    public void addTransferBudget(double salary){
+        if(salary <= budget){
+            this.transferBudget -= salary;
+            this.expenses += salary;
+            System.out.println("Added player with price " + salary + " Euro. Current budget: " + budget + " Euro.");
+        }
+        else {
+            System.out.println("Price " + salary + " Euro of player is not available to buy");
+        }
+    }
+
     public void financialReport(){
         System.out.println("Current budget: " + budget + " Euro");
         System.out.println("Total income: " + income + " Euro");
         System.out.println("Total expense: " + expenses + " Euro");
         System.out.println("Salary budget: " + salaryBudget + " Euro");
         System.out.println("Transfer budget: " + transferBudget + " Euro");
-    }
-
-    public static void main(String[] args) {
-        Finance finance = new Finance();
-
     }
 }

@@ -2,6 +2,7 @@ package menu.MenuPlayer;
 
 import menu.Menu;
 import menu.MenuCoach.FormationAndTactical.MenuTactical;
+import menu.MenuCoach.MenuExercise.MenuExercise;
 import menu.MenuItem;
 import menu.MenuMain;
 import menu.Navigator;
@@ -23,10 +24,10 @@ public class MenuPlayer implements Navigator {
     private void menuPlayer() {
         Menu menuPlayer = new MenuMain();
         menuPlayer.addMenuItem(new MenuItem("View formation and Strategy", new MenuTactical()));
-        menuPlayer.addMenuItem(new MenuItem("Club Regulations", new ClubRegulations()));
+        menuPlayer.addMenuItem(new MenuItem("View Exercise", new MenuExercise()));
         menuPlayer.addMenuItem(new MenuItem("Exit", new ExitCommand()));
         int choice;
-        System.out.println("Welcome " + SingletonCurrentPlayer.getInstance().getCurrentPlayerName());
+        System.out.println("Welcome Player " + SingletonCurrentPlayer.getInstance().getCurrentPlayerName());
         do{
             menuPlayer.display();
             choice = SCANNER.nextInt();

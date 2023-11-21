@@ -1,21 +1,20 @@
 package menu.MenuSportDirector;
 
 import menu.Command;
-import service.Tournament.LaligaLeague;
 import service.Tournament.Team;
 import service.Tournament.UEFAChampionLeague;
 
 import java.time.LocalDate;
 import java.util.*;
 
-public class CreateFootballMatchSchedule implements Command {
+public class CreateUefaChampionLeagueSchedule implements Command {
     private Map<String, Team> uefaTeams;
     private List<FootballMatch> uclMatches;
 
-    public CreateFootballMatchSchedule() {
+    public CreateUefaChampionLeagueSchedule() {
     }
 
-    public CreateFootballMatchSchedule(Map<String, Team> uefaTeams) {
+    public CreateUefaChampionLeagueSchedule(Map<String, Team> uefaTeams) {
         this.uefaTeams = uefaTeams;
         this.uclMatches = new ArrayList<>();
     }
@@ -108,20 +107,15 @@ public class CreateFootballMatchSchedule implements Command {
 
     @Override
     public void execute() {
-        LaligaLeague laligaLeague = new LaligaLeague("La Liga");
         UEFAChampionLeague uefaChampionLeague = new UEFAChampionLeague("UEFA Champion League");
 
-        System.out.println("Tournament name: " + laligaLeague.getNameTournament());
-        System.out.println();
-        laligaLeague.execute();
-        System.out.println();
 
         System.out.println("Tournament name: " + uefaChampionLeague.getNameTournament());
         System.out.println();
         uefaChampionLeague.execute();
         System.out.println();
 
-        CreateFootballMatchSchedule matchSchedule = new CreateFootballMatchSchedule(uefaChampionLeague.getUefaChampionLeagueTeams()
+        CreateUefaChampionLeagueSchedule matchSchedule = new CreateUefaChampionLeagueSchedule(uefaChampionLeague.getUefaChampionLeagueTeams()
         );
 
         uclMatches = matchSchedule.createUCLMatches();

@@ -6,8 +6,8 @@ public class FinanceSingleton {
     private final Finance finance;
     private static FinanceSingleton instance;
 
-    public FinanceSingleton() {
-        finance = FinancialManagement.getInstance().getFinance();
+    private FinanceSingleton() {
+        this.finance = FinancialManagement.getInstance().getFinance();
     }
 
     public static FinanceSingleton getInstance() {
@@ -15,5 +15,9 @@ public class FinanceSingleton {
             instance = new FinanceSingleton();
         }
         return instance;
+    }
+
+    public Finance getFinance() {
+        return finance;
     }
 }

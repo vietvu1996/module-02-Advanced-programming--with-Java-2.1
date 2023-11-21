@@ -16,9 +16,9 @@ public class TransferMarketTest {
         MyFileHandler fileHandler = new JsonMyFileHandler();
         List<Player> players = new ArrayList<>();
         PlayerFactory factory = new PlayerFactory();
-        User user1 = factory.createUser(UserType.PLAYER, "David", "123", 1,"David Villa","LW", "03/12/1981", "Male","Spain", 175, 68, false, 7, 3, 150000 );
+        User user1 = factory.createUser(UserType.PLAYER, "Gerard", "123", 1,"Gerard Moreno","ST", "03/12/1981", "Male","Spain", 175, 68, false, 7, 3, 100000 );
         players.add((Player) user1);
-        User user2 = factory.createUser(UserType.PLAYER, "Pedro", "012", 2,"Pedro Rodriguez","RW", "28/07/1987", "Male","Spain", 169, 67, true, 17, 5, 100000 );
+        User user2 = factory.createUser(UserType.PLAYER, "Bojan", "012", 2,"Bojan Krkić","CF", "28/08/1990", "Male","Spain", 169, 67, true, 9, 5, 150000 );
         players.add((Player) user2);
         fileHandler.saveToFile(Constants.TRANSFER_MARKET_PATH, players);
     }

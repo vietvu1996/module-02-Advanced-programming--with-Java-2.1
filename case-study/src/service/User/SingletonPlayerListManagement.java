@@ -15,14 +15,15 @@ import java.util.List;
 public class SingletonPlayerListManagement implements Observer, GenerateId {
     private List<Player> players;
     private final MyFileHandler fileHandler;
-    private final Type PLAYERTYPE = new TypeToken<ArrayList<Player>>() {}.getType();
+    private final Type PLAYERTYPE = new TypeToken<ArrayList<Player>>() {
+    }.getType();
 
     private static SingletonPlayerListManagement instance;
 
     private SingletonPlayerListManagement() {
         fileHandler = new JsonMyFileHandler();
         this.players = (ArrayList<Player>) fileHandler.readFromFile(Constants.PLAYER_FILE_PATH, PLAYERTYPE);
-        if(this.players == null){
+        if (this.players == null) {
             this.players = new ArrayList<>();
         }
     }
@@ -45,26 +46,28 @@ public class SingletonPlayerListManagement implements Observer, GenerateId {
     public Player removePlayer(int choice) {
         return players.remove(choice);
     }
+
     public void addPlayer(Player player) {
         players.add(player);
     }
+
     public void displayPlayer() {
         for (int i = 0; i < players.size(); i++) {
-            System.out.println((i+1) + ". " + players.get(i).toString());
+            System.out.println((i + 1) + ". " + players.get(i).toString());
         }
     }
 
     @Override
     public void update() {
         fileHandler.saveToFile(Constants.PLAYER_FILE_PATH, players);
-        System.out.println("Update successfully");
+        System.out.println("Player list was updated successfully");
     }
 
     @Override
     public int generateId() {
         try {
             int max = 0;
-            for (Player player: players) {
+            for (Player player : players) {
                 if (max < player.getId()) {
                     max = player.getId();
                 }
