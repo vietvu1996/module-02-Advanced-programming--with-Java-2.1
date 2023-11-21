@@ -1,26 +1,31 @@
 package menu.MenuChairman;
 
-import entity.Player;
+import com.google.gson.reflect.TypeToken;
+import constant.Constants;
+import service.GSON.FileHandler;
+import service.GSON.JsonFileHandler;
 
-public class FinancialManagement implements FinancialOperations{
+import java.lang.reflect.Type;
+
+public class FinancialManagement{
+    private FileHandler fileHandler;
     private final Finance finance;
+    private final Type FINANCETYPE = new TypeToken<Finance>(){}.getType();
+    private static FinancialManagement instance;
 
-    public FinancialManagement() {
-        this.finance = new Finance();
+    private FinancialManagement(){
+        fileHandler = new JsonFileHandler();
+        this.finance = (Finance) fileHandler.readFromFile(Constants.FINANCE_FILE_PATH, FINANCETYPE);
     }
 
-    @Override
-    public void manageFinance(double expense) {
-        finance.manageFinance(expense);
+    public static FinancialManagement getInstance(){
+        if(instance == null){
+            instance = new FinancialManagement();
+        }
+        return instance;
     }
 
-    @Override
-    public void addIncome(double income) {
-        finance.addIncome(income);
-    }
-
-    @Override
-    public void financialReport() {
-        finance.financialReport();
+    public Finance getFinance() {
+        return finance;
     }
 }

@@ -42,6 +42,18 @@ public class SingletonPlayerListManagement implements Observer, GenerateId {
         this.players = players;
     }
 
+    public Player removePlayer(int choice) {
+        return players.remove(choice);
+    }
+    public void addPlayer(Player player) {
+        players.add(player);
+    }
+    public void displayPlayer() {
+        for (int i = 0; i < players.size(); i++) {
+            System.out.println((i+1) + ". " + players.get(i).toString());
+        }
+    }
+
     @Override
     public void update() {
         fileHandler.saveToFile(Constants.PLAYER_FILE_PATH, players);

@@ -13,4 +13,6 @@ public interface Constants {
     String FOOTBALLCLUB_FILE_PATH = "data/footballclub.json";
     String RUNNING_EXERCISE_PATH = "data/runningexercise.json";
     String PUSHUP_EXERCISE_PATH = "data/pushupexercise.json";
+    String TRANSFER_MARKET_PATH = "data/transfermarket.json";
+    String FINANCE_FILE_PATH = "data/finance.json";
 }

@@ -1,11 +1,25 @@
 package menu.MenuChairman;
 
+import constant.Constants;
+import service.GSON.FileHandler;
+import service.GSON.JsonFileHandler;
+
 public class Finance {
     private double budget;
     private double income;
     private double expenses;
-    private final double salaryBudget;
-    private final double transferBudget;
+    private double salaryBudget;
+    private double transferBudget;
+    public Finance(){
+    }
+
+    public Finance(double budget, double income, double expenses, double salaryBudget, double transferBudget) {
+        this.budget = budget;
+        this.income = income;
+        this.expenses = expenses;
+        this.salaryBudget = salaryBudget;
+        this.transferBudget = transferBudget;
+    }
 
     public double getBudget() {
         return budget;
@@ -39,13 +53,6 @@ public class Finance {
         return transferBudget;
     }
 
-    public Finance(){
-        this.budget = 2000000;
-        this.income = 0;
-        this.expenses = 0;
-        this.salaryBudget = budget * 0.5;
-        this.transferBudget = budget * 0.5;
-    }
 
     public void manageFinance(double expense){
         if(expense <= budget){
@@ -70,5 +77,10 @@ public class Finance {
         System.out.println("Total expense: " + expenses + " Euro");
         System.out.println("Salary budget: " + salaryBudget + " Euro");
         System.out.println("Transfer budget: " + transferBudget + " Euro");
+    }
+
+    public static void main(String[] args) {
+        Finance finance = new Finance();
+
     }
 }

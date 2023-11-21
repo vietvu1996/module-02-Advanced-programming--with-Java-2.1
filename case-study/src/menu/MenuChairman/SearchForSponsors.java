@@ -1,13 +1,14 @@
 package menu.MenuChairman;
 
 import menu.Command;
+import service.ChangeandUpdate.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SearchForSponsors implements Command {
     private List<Sponsor> sponsors;
-    private Finance finance;
+    private Finance finance ;
     private int clubRanking;
 
     public SearchForSponsors() {
@@ -20,10 +21,10 @@ public class SearchForSponsors implements Command {
     }
 
     public void findSponsors() {
-        sponsors.add((new Sponsor("Spotify", 1000000, 1)));
-        sponsors.add((new Sponsor("Nike", 1500000, 1)));
-        sponsors.add((new Sponsor("Rakuten", 2100000, 3)));
-        sponsors.add((new Sponsor("Unicef", 900000, 2)));
+        sponsors.add((new Sponsor("Spotify", 2500000, 1)));
+        sponsors.add((new Sponsor("Nike", 2100000, 1)));
+        sponsors.add((new Sponsor("Rakuten", 2000000, 3)));
+        sponsors.add((new Sponsor("Unicef", 3000000, 2)));
         sponsors.add((new Sponsor("Qatar Foundation", 2000000, 4)));
 
         System.out.print("We have lists of Sponsors are: " );
@@ -41,9 +42,11 @@ public class SearchForSponsors implements Command {
     }
 
     private void dealWithSponsor(Sponsor sponsor) {
-        if (finance.getBudget() > sponsor.getOfferAmount() && clubRanking <= sponsor.getConditionSponsor() && clubRanking != 0) {
+        if (finance.getBudget() < sponsor.getOfferAmount() && clubRanking <= sponsor.getConditionSponsor() && clubRanking != 0) {
             System.out.println("The deal with " + sponsor.getName() + " has been made successfully.");
             System.out.println();
+            finance.addIncome(sponsor.getOfferAmount());
+
         } else {
             System.out.println("The club's budget is less than the offer amount. The deal with " + sponsor.getName() + " cannot be made.");
             System.out.println();
@@ -57,10 +60,9 @@ public class SearchForSponsors implements Command {
         searchForSponsors.findSponsors();
     }
 
-
-//    public static void main(String[] args) {
-//        SearchForSponsors searchForSponsors = new SearchForSponsors();
-//        searchForSponsors.execute();
-//    }
+    public static void main(String[] args) {
+        SearchForSponsors searchForSponsors = new SearchForSponsors();
+        searchForSponsors.execute();
+    }
 }
 

@@ -11,8 +11,7 @@ import java.lang.reflect.Type;
 public class SingletonTechnicalDirectorManagement {
     private SingleFileHandler fileHandler;
     private TechnicalDirector technicalDirector;
-    private final Type TECHNICALDIRECTORTYPE = new TypeToken<TechnicalDirector>() {
-    }.getType();
+    private final Type TECHNICALDIRECTORTYPE = new TypeToken<TechnicalDirector>() {}.getType();
     private static SingletonTechnicalDirectorManagement instance;
 
     private SingletonTechnicalDirectorManagement() {
