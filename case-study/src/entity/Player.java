@@ -152,11 +152,14 @@ public class Player extends User {
                 ", fullName='" + fullName + '\'' +
                 ", position='" + position + '\'' +
                 ", DateOfBirth='" + DateOfBirth + '\'' +
+                ", gender='" + gender + '\'' +
                 ", nationality='" + nationality + '\'' +
                 ", height=" + height +
                 ", weight=" + weight +
                 ", isLamasia=" + isLamasia +
                 ", TshirtNumber=" + TshirtNumber +
+                ", yearsContract=" + yearsContract +
+                ", salary=" + salary +
                 '}';
     }
 }

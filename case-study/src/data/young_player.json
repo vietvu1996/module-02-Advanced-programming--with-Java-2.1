@@ -26,5 +26,12 @@
     "age": 19,
     "position": "CAM",
     "performance": "Excellent"
+  },
+  {
+    "id": 5,
+    "name": "DaoNguyen",
+    "age": 27,
+    "position": "CAM",
+    "performance": "Good"
   }
 ]

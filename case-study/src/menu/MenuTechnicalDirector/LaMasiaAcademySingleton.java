@@ -14,8 +14,7 @@ public class LaMasiaAcademySingleton implements Observer, GenerateId {
     private List<YoungPlayer> youngPlayers;
     private static LaMasiaAcademySingleton instance;
     private final MyFileHandler fileHandler;
-    private final Type YOUNG_PLAYER_TYPE = new TypeToken<ArrayList<YoungPlayer>>() {
-    }.getType();
+    private final Type YOUNG_PLAYER_TYPE = new TypeToken<ArrayList<YoungPlayer>>() {}.getType();
 
     private LaMasiaAcademySingleton() {
         fileHandler = new JsonMyFileHandler();

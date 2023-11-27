@@ -17,16 +17,13 @@ public class CommandPaySalaryForPlayer extends Subject implements Command{
             SingletonPlayerListManagement.getInstance().displayPlayer();
             System.out.println("Input player line you want to pay");
             int choice = SCANNER.nextInt() - 1;
-            Observer playerListObserver = SingletonPlayerListManagement.getInstance();
             Observer financeManagement = FinancialManagement.getInstance();
-            addObserver(playerListObserver);
             addObserver(financeManagement);
             Player player = SingletonPlayerListManagement.getInstance().getPlayers().get(choice);
             FinancialManagement.getInstance().getFinance().paySalary(player.getSalary());
 
             notifyObserver();
 
-            removeObserver(playerListObserver);
             removeObserver(financeManagement);
         } catch (IndexOutOfBoundsException | InputMismatchException e) {
             System.out.println("Invalid choice, please try again");

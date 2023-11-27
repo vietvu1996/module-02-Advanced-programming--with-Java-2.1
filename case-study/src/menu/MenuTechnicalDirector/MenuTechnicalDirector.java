@@ -9,13 +9,11 @@ import service.chainLogin.ExitCommand;
 
 import java.util.Scanner;
 
-public class MenuTechnicalDirector implements Navigator {
+public class MenuTechnicalDirector implements Navigator{
     private static MenuTechnicalDirector instance;
     private final Scanner SCANNER = new Scanner(System.in);
     private void menuTechnicalDirector(){
         Menu menuTechnicalDirector = new MenuMain();
-//        menuTechnicalDirector.addMenuItem(new MenuItem("Young Player", ));
-//        menuTechnicalDirector.addMenuItem(new MenuItem("Search Talent Player", new SearchTalentPlayer()));
         menuTechnicalDirector.addMenuItem(new MenuItem("Create new young player", new CommandAddNewYoungPlayer()));
         menuTechnicalDirector.addMenuItem(new MenuItem("Display all young player", new CommandDisplayAllYoungPlayer()));
         menuTechnicalDirector.addMenuItem(new MenuItem("Change young player", new CommandChangeCurrentYoungPlayerName()));

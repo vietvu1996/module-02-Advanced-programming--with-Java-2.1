@@ -11,7 +11,9 @@ public abstract class Subject {
     public void removeObserver(Observer observer){
         observerList.remove(observer);
     }
-    public void removeAll() {observerList.clear();}
+    public void removeAll() {
+        observerList.clear();
+    }
     public void notifyObserver(){
         for (Observer observer: observerList) {
             observer.update();

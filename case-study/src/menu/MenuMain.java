@@ -18,7 +18,7 @@ public class MenuMain implements Menu {
     @Override
     public void display() {
         for (int i = 1; i <= menuItems.size(); i++) {
-            System.out.println(i + ". " + menuItems.get(i-1).getName());
+            System.out.println(i + ". " + menuItems.get(i - 1).getName());
         }
     }
 

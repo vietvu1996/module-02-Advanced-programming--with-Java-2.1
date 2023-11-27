@@ -3,6 +3,7 @@ package menu;
 import service.chainLogin.ExitCommand;
 import service.chainLogin.LoginCommand;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class NavigationMenuLogin implements Navigator {
@@ -13,12 +14,17 @@ public class NavigationMenuLogin implements Navigator {
         Menu menuLogin = new MenuMain();
         menuLogin.addMenuItem(new MenuItem("Login", new LoginCommand()));
         menuLogin.addMenuItem(new MenuItem("Exit", new ExitCommand()));
-        int choice;
-        do {
-            menuLogin.display();
-            choice = SCANNER.nextInt();
-            menuLogin.runCommand(choice - 1);
-        } while (choice != 0);
+        try {
+            int choice;
+            do {
+                menuLogin.display();
+                choice = SCANNER.nextInt();
+                menuLogin.runCommand(choice - 1);
+            } while (choice != 0);
+        } catch (InputMismatchException e){
+            System.out.println("Invalid. Please try again");
+            System.out.println(e.getMessage());
+        }
     }
 
     @Override

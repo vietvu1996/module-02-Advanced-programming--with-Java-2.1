@@ -77,12 +77,4 @@ public class Finance{
             System.out.println("Price " + salary + " Euro of player is not available to buy");
         }
     }
-
-    public void financialReport(){
-        System.out.println("Current budget: " + budget + " Euro");
-        System.out.println("Total income: " + income + " Euro");
-        System.out.println("Total expense: " + expenses + " Euro");
-        System.out.println("Salary budget: " + salaryBudget + " Euro");
-        System.out.println("Transfer budget: " + transferBudget + " Euro");
-    }
 }

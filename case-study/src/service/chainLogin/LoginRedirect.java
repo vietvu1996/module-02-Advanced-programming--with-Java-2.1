@@ -1,6 +1,6 @@
 package service.chainLogin;
 
-import menu.MenuAssistantCoach.MenuAssistantCoach;
+import menu.assistant_coach.MenuAssistantCoach;
 import menu.MenuChairman.MenuChairman;
 import menu.MenuCoach.MenuCoach;
 import menu.MenuPlayer.MenuPlayer;

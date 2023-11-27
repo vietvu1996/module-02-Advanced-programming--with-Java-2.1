@@ -3,7 +3,6 @@ package menu.MenuSportDirector;
 import menu.Command;
 import service.Tournament.LaligaLeague;
 import service.Tournament.Team;
-import service.Tournament.UEFAChampionLeague;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -70,7 +69,6 @@ public class CreateLaligaSchedule implements Command {
             Team awayTeam = originalMatch.getHomeTeam();
             LocalDate matchDate = getRandomDateFromList(availableDates);
             laLigaMatches.add(new FootballMatch(homeTeam, awayTeam, matchDate));
-
             availableDates.remove(matchDate);
         }
         return laLigaMatches;
@@ -119,10 +117,5 @@ public class CreateLaligaSchedule implements Command {
 
 
         System.out.println("Available Match Dates: " + createLaligaSchedule.generateAvailableDates(createLaligaSchedule.getOccupiedLaligaMatchesDates(laLigaMatches)));
-    }
-
-    public static void main(String[] args) {
-        CreateLaligaSchedule createLaligaSchedule = new CreateLaligaSchedule();
-        createLaligaSchedule.execute();
     }
 }
